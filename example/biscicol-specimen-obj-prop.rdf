@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+This RDF is structured using BiSciCol object properties as described at http://biscicol.blogspot.com/2013_03_01_archive.html 
+The BiSciCol Term Index is at biscicol.org/terms/index.html
+Note: this example does not include an instance of Geological Context
+-->
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+xmlns:owl="http://www.w3.org/2002/07/owl#"
+xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
+xmlns:dwctype="http://rs.tdwg.org/dwc/dwctype/"
+xmlns:dwcuri="http://rs.tdwg.org/dwc/uri/"
+xmlns:dcterms="http://purl.org/dc/terms/"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:dcmitype="http://purl.org/dc/dcmitype/"
+xmlns:foaf="http://xmlns.com/foaf/0.1/"
+xmlns:ac="http://rs.tdwg.org/ac/terms/"
+xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+xmlns:xmpRights="http://ns.adobe.com/xap/1.0/rights/"
+xmlns:dsw="http://purl.org/dsw/"
+xmlns:mix="http://www.loc.gov/mix/v20"
+xmlns:bibo="http://purl.org/ontology/bibo/"
+xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+xmlns:bsc="http://biscicol.org/terms/index.html#"
+xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
+>
+<rdf:Description rdf:about="http://arctos.database.museum/guid/MVZ:Mamm:165861">
+     <!-- In the BiSciCol blog example, a specimen is considered a subclass of an occurrence, so typed as both here -->
+     <rdf:type rdf:resource ="http://rs.tdwg.org/dwc/dwctype/PreservedSpecimen" />
+     <rdf:type rdf:resource ="http://rs.tdwg.org/dwc/dwctype/Occurrence" />
+     <bsc:depends_on rdf:resource="http://nt2.net/ark:/21547/Et2" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://arctos.database.museum/guid/MVZ:Mamm:165861#1999-01-27pearson">
+    <rdf:type rdf:resource ="http://rs.tdwg.org/dwc/dwctype/Identification" />
+    <dwcuri:toTaxonConcept rdf:resource="http://zoobank.org/306F5618-D154-47D5-81BB-697CB2A83EE7"/>
+    <bsc:depends_on rdf:resource="http://zoobank.org/306F5618-D154-47D5-81BB-697CB2A83EE7"/>
+    <bsc:depends_on rdf:resource="http://arctos.database.museum/guid/MVZ:Mamm:165861"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://nt2.net/ark:/21547/Et2">
+     <rdf:type rdf:resource ="http://purl.org/dc/dcmitype/Event" />
+     <bsc:related_to rdf:resource="http://nt2.net/ark:/21547/c2" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://nt2.net/ark:/21547/c2">
+     <rdf:type rdf:resource ="http://purl.org/dc/terms/Location" />
+     <dwcuri:inDescribedPlace rdf:resource="http://sws.geonames.org/3846077/"/>
+</rdf:Description>
+
+</rdf:RDF>

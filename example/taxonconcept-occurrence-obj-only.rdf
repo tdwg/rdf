@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+xmlns:owl="http://www.w3.org/2002/07/owl#"
+xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
+xmlns:dwctype="http://rs.tdwg.org/dwc/dwctype/"
+xmlns:dwcuri="http://rs.tdwg.org/dwc/uri/"
+xmlns:dcterms="http://purl.org/dc/terms/"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:dcmitype="http://purl.org/dc/dcmitype/"
+xmlns:foaf="http://xmlns.com/foaf/0.1/"
+xmlns:ac="http://rs.tdwg.org/ac/terms/"
+xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+xmlns:xmpRights="http://ns.adobe.com/xap/1.0/rights/"
+xmlns:dsw="http://purl.org/dsw/"
+xmlns:mix="http://www.loc.gov/mix/v20"
+xmlns:bibo="http://purl.org/ontology/bibo/"
+xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+xmlns:txn="http://lod.taxonconcept.org/ontology/txn.owl#"
+>
+<rdf:Description rdf:about="http://arctos.database.museum/guid/MVZ:Mamm:165861#Individual">
+     <rdf:type rdf:resource ="http://lod.taxonconcept.org/ontology/txn.owl#SpeciesIndividual" />
+     <txn:individualHasCurrentIdentificationAssertion rdf:resource ="http://arctos.database.museum/guid/MVZ:Mamm:165861#Identification_0001" />
+     <txn:individualHasOccurrence rdf:resource="http://arctos.database.museum/guid/MVZ:Mamm:165861#Occurrence" />
+     <txn:individualHasSpeciesConcept rdf:resource ="http://lod.taxonconcept.org/ses/3tYE7#Species" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://arctos.database.museum/guid/MVZ:Mamm:165861#Identification_0001">
+    <rdf:type rdf:resource ="http://rs.tdwg.org/dwc/dwctype/Identification" />
+    <dwcuri:toTaxonConcept rdf:resource="http://lod.taxonconcept.org/ses/3tYE7#Species"/>
+    <txn:identificationHasSpeciesConcept rdf:resource="http://lod.taxonconcept.org/ses/3tYE7#Species"/>
+    <txn:identificationOfIndividual rdf:resource ="http://arctos.database.museum/guid/MVZ:Mamm:165861#Individual" />
+    <txn:identificationHasOccurrence rdf:resource ="http://arctos.database.museum/guid/MVZ:Mamm:165861#Occurrence" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://arctos.database.museum/guid/MVZ:Mamm:165861#Occurrence">
+     <rdf:type rdf:resource ="http://rs.tdwg.org/dwc/dwctype/PreservedSpecimen" />
+     <rdf:type rdf:resource ="http://rs.tdwg.org/dwc/dwctype/Occurrence" />
+     <txn:occurrenceHasIndividual rdf:resource="http://arctos.database.museum/guid/MVZ:Mamm:165861#Individual" />
+     <txn:occurrenceHasSpeciesConcept rdf:resource="http://lod.taxonconcept.org/ses/3tYE7#Species" />
+     <txn:occurrenceHasArea rdf:resource="http://arctos.database.museum/guid/MVZ:Mamm:165861#Area" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://arctos.database.museum/guid/MVZ:Mamm:165861#Area">
+     <rdf:type rdf:resource ="http://purl.org/dc/terms/Location" />
+     <txn:areaHasOccurrence rdf:resource="http://arctos.database.museum/guid/MVZ:Mamm:165861#Occurrence" />
+     <txn:areaHasIndividual rdf:resource="http://arctos.database.museum/guid/MVZ:Mamm:165861#Individual" />
+     <txn:areaHasObservedSpeciesConcept rdf:resource="http://lod.taxonconcept.org/ses/3tYE7#Species" />
+</rdf:Description>
+
+</rdf:RDF>
+

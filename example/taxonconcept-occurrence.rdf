@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+xmlns:owl="http://www.w3.org/2002/07/owl#"
+xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
+xmlns:dwctype="http://rs.tdwg.org/dwc/dwctype/"
+xmlns:dwcuri="http://rs.tdwg.org/dwc/uri/"
+xmlns:dcterms="http://purl.org/dc/terms/"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:dcmitype="http://purl.org/dc/dcmitype/"
+xmlns:foaf="http://xmlns.com/foaf/0.1/"
+xmlns:ac="http://rs.tdwg.org/ac/terms/"
+xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+xmlns:xmpRights="http://ns.adobe.com/xap/1.0/rights/"
+xmlns:dsw="http://purl.org/dsw/"
+xmlns:mix="http://www.loc.gov/mix/v20"
+xmlns:bibo="http://purl.org/ontology/bibo/"
+xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+xmlns:txn="http://lod.taxonconcept.org/ontology/txn.owl#"
+>
+<rdf:Description rdf:about="http://arctos.database.museum/guid/MVZ:Mamm:165861#Individual">
+     <rdf:type rdf:resource ="http://lod.taxonconcept.org/ontology/txn.owl#SpeciesIndividual" />
+     <dcterms:type rdf:resource ="http://purl.org/dc/dcmitype/PhysicalObject" />
+     <dcterms:description xml:lang="en">Individual organism http://arctos.database.museum/guid/MVZ:Mamm:165861#Individual</dcterms:description>
+     <txn:individualHasCurrentIdentificationAssertion rdf:resource ="http://arctos.database.museum/guid/MVZ:Mamm:165861#Identification_0001" />
+     <txn:individualHasOccurrence rdf:resource="http://arctos.database.museum/guid/MVZ:Mamm:165861#Occurrence" />
+     <txn:individualHasSpeciesConcept rdf:resource ="http://lod.taxonconcept.org/ses/3tYE7#Species" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://arctos.database.museum/guid/MVZ:Mamm:165861#Identification_0001">
+    <rdf:type rdf:resource ="http://rs.tdwg.org/dwc/dwctype/Identification" />
+	<rdf:type rdf:resource ="http://lod.taxonconcept.org/ontology/txn.owl#Identification" />
+    <dwc:identifiedBy>Oliver P. Pearson</dwc:identifiedBy>
+    <dwcuri:identifiedBy rdf:resource ="http://viaf.org/viaf/263074474" />
+    <dwc:dateIdentified>1999-01-27</dwc:dateIdentified>
+    <dwc:scientificName>Ctenomys sociabilis Pearson and Christie, 1985</dwc:scientificName>
+    <dwc:vernacularName xml:lang="en">colonial tuco-tuco</dwc:vernacularName>
+    <dwc:vernacularName xml:lang="es">tuco-tuco colonial</dwc:vernacularName>
+    <dwc:class>Mammalia</dwc:class>
+    <dwc:order>Rodentia</dwc:order>
+    <dwc:family>Ctenomyidae</dwc:family>
+    <dwc:genus>Ctenomys</dwc:genus>
+    <dwc:specificEpithet>sociabilis</dwc:specificEpithet>
+    <dwc:typeStatus>holotype of Ctenomys sociabilis. Pearson O. P., and M. I. Christie. 1985. Historia Natural, 5(37):388</dwc:typeStatus>
+    <dwc:scientificNameAuthorship>Pearson and Christie, 1985</dwc:scientificNameAuthorship>
+    <dwc:namePublishedInYear>1985</dwc:namePublishedInYear>
+    <dwc:taxonRank>species</dwc:taxonRank>
+    <dwc:nameAccordingTo>Oliver P. Pearson. 1985. Los tuco-tucos (genera Ctenomys) de los Parques Nacionales Lanin y Nahuel Huapi, Argentina. Historia Natural 5(37):337-343.</dwc:nameAccordingTo>
+    <dwc:identificationRemarks xml:lang="en">ID from citation in Pearson 1985.</dwc:identificationRemarks>
+    <dwcuri:toTaxonConcept rdf:resource="http://lod.taxonconcept.org/ses/3tYE7#Species"/>
+    <txn:identificationHasSpeciesConcept rdf:resource="http://lod.taxonconcept.org/ses/3tYE7#Species"/>
+    <txn:identificationOfIndividual rdf:resource ="http://arctos.database.museum/guid/MVZ:Mamm:165861#Individual" />
+    <txn:identificationHasOccurrence rdf:resource ="http://arctos.database.museum/guid/MVZ:Mamm:165861#Occurrence" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://arctos.database.museum/guid/MVZ:Mamm:165861#Occurrence">
+     <rdf:type rdf:resource ="http://rs.tdwg.org/dwc/dwctype/PreservedSpecimen" />
+     <rdf:type rdf:resource ="http://rs.tdwg.org/dwc/dwctype/Occurrence" />
+     <rdf:type rdf:resource ="http://lod.taxonconcept.org/ontology/txn.owl#Occurrence" />
+     <dcterms:type rdf:resource ="http://purl.org/dc/dcmitype/PhysicalObject" />
+     <dcterms:description xml:lang="en">Preserved specimen http://arctos.database.museum/guid/MVZ:Mamm:165861</dcterms:description>
+     <dwc:basisOfRecord>PreservedSpecimen</dwc:basisOfRecord>
+     <dc:creator>University of California Berkeley Museum of Vertebrate Zoology</dc:creator>
+     <dcterms:creator rdf:resource="http://biocol.org/urn:lsid:biocol.org:col:34777" />
+     <dcterms:created>1983-11-16</dcterms:created>
+     <dwc:institutionCode>MVZ</dwc:institutionCode>
+     <dwc:collectionCode>Mamm</dwc:collectionCode>
+     <dwc:catalogNumber>165861</dwc:catalogNumber>
+     <dwc:otherCatalogNumbers>12272</dwc:otherCatalogNumbers>
+     <dcterms:identifier>MVZ:Mamm:165861</dcterms:identifier>
+     <dcterms:identifier>http://arctos.database.museum/guid/MVZ:Mamm:165861</dcterms:identifier>     
+     <dwcuri:inCollection rdf:resource ="http://biocol.org/urn:lsid:biocol.org:col:34777" />
+     <dwc:preparations>skin; skull; skeleton</dwc:preparations>
+     <dwc:sex>female</dwc:sex>
+     <dwc:recordedBy>Oliver P. Pearson</dwc:recordedBy>
+     <dwcuri:recordedBy rdf:resource ="http://viaf.org/viaf/263074474" />
+     <dwc:recordNumber>7101</dwc:recordNumber>
+     <!-- the TaxonConcept Ontology does not represent Event as a separate class -->
+     <dwc:eventDate>1983-11-16</dwc:eventDate>
+     <txn:startDate>1983-11-16</txn:startDate>
+     <txn:endDate>1983-11-16</txn:endDate>     
+     <txn:occurrenceHasIndividual rdf:resource="http://arctos.database.museum/guid/MVZ:Mamm:165861#Individual" />
+     <txn:occurrenceHasSpeciesConcept rdf:resource="http://lod.taxonconcept.org/ses/3tYE7#Species" />
+     <txn:occurrenceHasArea rdf:resource="http://arctos.database.museum/guid/MVZ:Mamm:165861#Area" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://arctos.database.museum/guid/MVZ:Mamm:165861#Area">
+     <rdf:type rdf:resource ="http://purl.org/dc/terms/Location" />
+     <rdf:type rdf:resource ="http://lod.taxonconcept.org/ontology/txn.owl#Area" />
+     <dwc:decimalLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-40.9684722</dwc:decimalLatitude>
+     <dwc:decimalLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-71.1918056</dwc:decimalLongitude>
+     <dwc:geodeticDatum>EPSG:4326</dwc:geodeticDatum>
+     <dwc:minimumElevationInMeters rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1075</dwc:minimumElevationInMeters>
+     <dwc:maximumElevationInMeters rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1075</dwc:maximumElevationInMeters>
+     <dwc:coordinateUncertaintyInMeters rdf:datatype="http://www.w3.org/2001/XMLSchema#int">30</dwc:coordinateUncertaintyInMeters>
+     <owl:sameAs rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#-40.9684722,-71.1918056;u=30" />
+     <geo:lat>-40.9684722</geo:lat>
+     <geo:long>-71.1918056</geo:long>
+     <geo:alt>1075</geo:alt>
+     <dwc:continent>South America</dwc:continent>
+     <dwc:country>Argentina</dwc:country>
+     <dwc:countryCode>AR</dwc:countryCode>
+     <dwc:stateProvince>Neuquen</dwc:stateProvince>
+     <dwc:county>Los Lagos</dwc:county>
+     <dwc:locality>Estancia Fortin Chacabuco, 3 km S and 2 km W Cerro Puntudo, Depto. Los Lagos</dwc:locality>
+     <dwc:verbatimLocality>Estancia Fortin Chacabuco, 3 km S and 2 km W Co. Puntudo</dwc:verbatimLocality>
+     <dwc:locationRemarks xml:lang="en">The colony was just N of the fence and just E of the stream according to Michael Christie, who verified on Google Earth (about 40. 58' 06 to 07" and 71. 11' 30 to 31")</dwc:locationRemarks>
+     <dwc:georeferenceSources>Google Earth (assumed v.6)</dwc:georeferenceSources>
+     <dwc:georeferenceProtocol>MaNIS georeferencing guidelines</dwc:georeferenceProtocol>
+     <dwcuri:inDescribedPlace rdf:resource="http://sws.geonames.org/3846077/"/>
+     <txn:areaHasOccurrence rdf:resource="http://arctos.database.museum/guid/MVZ:Mamm:165861#Occurrence" />
+     <txn:areaHasIndividual rdf:resource="http://arctos.database.museum/guid/MVZ:Mamm:165861#Individual" />
+     <txn:areaHasObservedSpeciesConcept rdf:resource="http://lod.taxonconcept.org/ses/3tYE7#Species" />
+</rdf:Description>
+
+<!--
+Information about the metadata document itself
+-->
+<rdf:Description rdf:about="http://arctos.database.museum/guid/MVZ:Mamm:165861.rdf">
+     <dcterms:description>RDF formatted descriptions</dcterms:description>
+     <rdf:type rdf:resource ="http://xmlns.com/foaf/0.1/Document" />
+     <dc:creator>Arctos Museum Database</dc:creator>
+     <dc:language>en</dc:language>
+     <dcterms:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng" />
+     <dcterms:modified rdf:datatype ="http://www.w3.org/2001/XMLSchema#dateTime">2013-06-27T10:26:34</dcterms:modified>
+     <dcterms:references rdf:resource="http://arctos.database.museum/guid/MVZ:Mamm:165861#Individual"/>
+     <dcterms:references rdf:resource="http://arctos.database.museum/guid/MVZ:Mamm:165861#Identification_0001"/>
+     <dcterms:references rdf:resource="http://arctos.database.museum/guid/MVZ:Mamm:165861#Occurrence"/>
+     <dcterms:references rdf:resource="http://arctos.database.museum/guid/MVZ:Mamm:165861#Area"/>
+</rdf:Description>
+</rdf:RDF>
+

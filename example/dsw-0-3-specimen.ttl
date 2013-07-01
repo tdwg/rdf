@@ -1,0 +1,120 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/>.
+@prefix dwctype: <http://rs.tdwg.org/dwc/dwctype/>.
+@prefix dwcuri: <http://rs.tdwg.org/dwc/uri/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dcmitype: <http://purl.org/dc/dcmitype/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ac: <http://rs.tdwg.org/ac/terms/>.
+@prefix xmp: <http://ns.adobe.com/xap/1.0/>.
+@prefix xmpRights: <http://ns.adobe.com/xap/1.0/rights/>.
+@prefix dsw: <http://purl.org/dsw/>.
+@prefix mix: <http://www.loc.gov/mix/v20>.
+@prefix bibo: <http://purl.org/ontology/bibo/>.
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
+
+<http://arctos.database.museum/guid/MVZ:Mamm:165861> 
+	dc:creator "University of California Berkeley Museum of Vertebrate Zoology";
+	dcterms:created "1983-11-16";
+	dcterms:creator <http://biocol.org/urn:lsid:biocol.org:col:34777>;
+	dcterms:description "Preserved specimen http://arctos.database.museum/guid/MVZ:Mamm:165861"@en;
+	dcterms:identifier "http://arctos.database.museum/guid/MVZ:Mamm:165861",
+	                "MVZ:Mamm:165861";
+	dcterms:type dcmitype:PhysicalObject;
+	dsw:derivedFrom <http://arctos.database.museum/guid/MVZ:Mamm:165861#ind>;
+	dsw:evidenceFor <http://arctos.database.museum/guid/MVZ:Mamm:165861#occ>;
+	dsw:idBasisForId <http://arctos.database.museum/guid/MVZ:Mamm:165861#1999-01-27pearson>;
+	dwc:basisOfRecord "PreservedSpecimen";
+	dwc:catalogNumber "165861";
+	dwc:collectionCode "Mamm";
+	dwc:institutionCode "MVZ";
+	dwc:otherCatalogNumbers "12272";
+	dwc:preparations "skin; skull; skeleton";
+	dwc:sex "female";
+	dwcuri:inCollection <http://biocol.org/urn:lsid:biocol.org:col:34777>;
+	a dwctype:PreservedSpecimen.
+	
+<http://arctos.database.museum/guid/MVZ:Mamm:165861#1999-01-27pearson> 
+	dsw:idBasedOn <http://arctos.database.museum/guid/MVZ:Mamm:165861>;
+	dsw:identifies <http://arctos.database.museum/guid/MVZ:Mamm:165861#ind>;
+	dwc:class "Mammalia";
+	dwc:dateIdentified "1999-01-27";
+	dwc:family "Ctenomyidae";
+	dwc:genus "Ctenomys";
+	dwc:identificationRemarks "ID from citation in Pearson 1985."@en;
+	dwc:identifiedBy "Oliver P. Pearson";
+	dwc:nameAccordingTo "Oliver P. Pearson. 1985. Los tuco-tucos (genera Ctenomys) de los Parques Nacionales Lanin y Nahuel Huapi, Argentina. Historia Natural 5(37):337-343.";
+	dwc:namePublishedInYear "1985";
+	dwc:order "Rodentia";
+	dwc:scientificName "Ctenomys sociabilis Pearson and Christie, 1985";
+	dwc:scientificNameAuthorship "Pearson and Christie, 1985";
+	dwc:specificEpithet "sociabilis";
+	dwc:taxonRank "species";
+	dwc:typeStatus "holotype of Ctenomys sociabilis. Pearson O. P., and M. I. Christie. 1985. Historia Natural, 5(37):388";
+	dwc:vernacularName "colonial tuco-tuco"@en,
+	                  "tuco-tuco colonial"@es;
+	dwcuri:identifiedBy <http://viaf.org/viaf/263074474>;
+	dwcuri:toTaxonConcept <urn:lsid:zoobank.org:act:306F5618-D154-47D5-81BB-697CB2A83EE7>;
+	a dwctype:Identification.
+	
+<http://arctos.database.museum/guid/MVZ:Mamm:165861#eve> 
+	dsw:eventOf <http://arctos.database.museum/guid/MVZ:Mamm:165861#occ>;
+	dsw:locatedAt <http://arctos.database.museum/guid/MVZ:Mamm:165861#loc>;
+	dwc:eventDate "1983-11-16";
+	a dcmitype:Event.
+	
+<http://arctos.database.museum/guid/MVZ:Mamm:165861#ind> 
+	dcterms:description "Individual organism http://arctos.database.museum/guid/MVZ:Mamm:165861#ind"@en;
+	dcterms:type dcmitype:PhysicalObject;
+	dsw:hasDerivative <http://arctos.database.museum/guid/MVZ:Mamm:165861>;
+	dsw:hasIdentification <http://arctos.database.museum/guid/MVZ:Mamm:165861#1999-01-27pearson>;
+	dsw:hasOccurrence <http://arctos.database.museum/guid/MVZ:Mamm:165861#occ>;
+	a dsw:IndividualOrganism.
+	
+<http://arctos.database.museum/guid/MVZ:Mamm:165861#loc> 
+	dsw:locates <http://arctos.database.museum/guid/MVZ:Mamm:165861#eve>;
+	dwc:continent "South America";
+	dwc:coordinateUncertaintyInMeters "30"^^xsd:int;
+	dwc:country "Argentina";
+	dwc:countryCode "AR";
+	dwc:county "Los Lagos";
+	dwc:decimalLatitude -40.9684722;
+	dwc:decimalLongitude -71.1918056;
+	dwc:geodeticDatum "EPSG:4326";
+	dwc:georeferenceProtocol "MaNIS georeferencing guidelines";
+	dwc:georeferenceSources "Google Earth (assumed v.6)";
+	dwc:locality "Estancia Fortin Chacabuco, 3 km S and 2 km W Cerro Puntudo, Depto. Los Lagos";
+	dwc:locationRemarks """The colony was just N of the fence and just E of the stream according to Michael Christie, who verified on Google Earth (about 40. 58' 06 to 07\" and 71. 11' 30 to 31\")"""@en;
+	dwc:maximumElevationInMeters "1075"^^xsd:int;
+	dwc:minimumElevationInMeters "1075"^^xsd:int;
+	dwc:stateProvince "Neuquen";
+	dwc:verbatimLocality "Estancia Fortin Chacabuco, 3 km S and 2 km W Co. Puntudo";
+	dwcuri:inDescribedPlace <http://sws.geonames.org/3846077/>;
+	a dcterms:Location.
+	
+<http://arctos.database.museum/guid/MVZ:Mamm:165861#occ> 
+	dsw:atEvent <http://arctos.database.museum/guid/MVZ:Mamm:165861#eve>;
+	dsw:hasEvidence <http://arctos.database.museum/guid/MVZ:Mamm:165861>;
+	dsw:occurrenceOf <http://arctos.database.museum/guid/MVZ:Mamm:165861#ind>;
+	dwc:recordNumber "7101";
+	dwc:recordedBy "Oliver P. Pearson";
+	dwcuri:recordedBy <http://viaf.org/viaf/263074474>;
+	a dwctype:Occurrence.
+	
+<http://arctos.database.museum/guid/MVZ:Mamm:165861.rdf> 
+	dc:creator "Arctos Museum Database";
+	dc:language "en";
+	dcterms:description "RDF formatted descriptions";
+	dcterms:language <http://id.loc.gov/vocabulary/languages/eng>;
+	dcterms:modified "2013-06-27T10:26:34"^^xsd:dateTime;
+	dcterms:references <http://arctos.database.museum/guid/MVZ:Mamm:165861>,
+	                <http://arctos.database.museum/guid/MVZ:Mamm:165861#1999-01-27pearson>,
+	                <http://arctos.database.museum/guid/MVZ:Mamm:165861#eve>,
+	                <http://arctos.database.museum/guid/MVZ:Mamm:165861#ind>,
+	                <http://arctos.database.museum/guid/MVZ:Mamm:165861#loc>,
+	                <http://arctos.database.museum/guid/MVZ:Mamm:165861#occ>;
+	a foaf:Document.

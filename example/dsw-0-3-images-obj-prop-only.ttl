@@ -1,0 +1,287 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/>.
+@prefix dwctype: <http://rs.tdwg.org/dwc/dwctype/>.
+@prefix dwcuri: <http://rs.tdwg.org/dwc/uri/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dcmitype: <http://purl.org/dc/dcmitype/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix ac: <http://rs.tdwg.org/ac/terms/>.
+@prefix xmp: <http://ns.adobe.com/xap/1.0/>.
+@prefix xmpRights: <http://ns.adobe.com/xap/1.0/rights/>.
+@prefix Iptc4xmpExt: <http://iptc.org/std/Iptc4xmpExt/2008-02-29/>.
+@prefix dsw: <http://purl.org/dsw/>.
+@prefix mix: <http://www.loc.gov/mix/v20>.
+@prefix mbank: <http://www.morphbank.net/schema/morphbank#>.
+
+<http://bioimages.vanderbilt.edu/ind-baskauf/87880> 
+	dcterms:hasPart <http://apsc.apsu.edu/APSC:vascular:39274>;
+	dcterms:identifier "http://bioimages.vanderbilt.edu/ind-baskauf/87880";
+	dsw:hasDerivative 
+		<http://apsc.apsu.edu/APSC:vascular:39274>,
+		<http://bioimages.vanderbilt.edu/baskauf/87880>,
+		<http://bioimages.vanderbilt.edu/baskauf/87937>;
+	dsw:hasIdentification 
+		<http://bioimages.vanderbilt.edu/ind-baskauf/35052#2013-08-21estesld>,
+		<http://bioimages.vanderbilt.edu/ind-baskauf/87880#2013-05-08baskauf>;
+	dsw:hasOccurrence 
+		<http://bioimages.vanderbilt.edu/baskauf/87880#occ>,
+		<http://bioimages.vanderbilt.edu/baskauf/87937#occ>;
+	dsw:individualOrganismRemarks "Individual represents a small population within a radius of about 1 m."@en;
+	dwc:establishmentMeans "native";
+	a dsw:IndividualOrganism;
+	foaf:depiction 
+		<http://bioimages.vanderbilt.edu/baskauf/87880>,
+		<http://bioimages.vanderbilt.edu/baskauf/87937>.
+		
+<http://bioimages.vanderbilt.edu/ind-baskauf/87880#2013-05-08baskauf> 
+	dcterms:description "Determination of Hedyotis crassifolia Raf.  sensu Gleason Cronquist 1991 for the individual http://bioimages.vanderbilt.edu/ind-baskauf/87880"@en;
+	dsw:idBasedOn 
+		<http://bioimages.vanderbilt.edu/baskauf/87880>,
+		<http://bioimages.vanderbilt.edu/baskauf/87937>;
+	dsw:identifies <http://bioimages.vanderbilt.edu/ind-baskauf/87880>;
+	dwc:dateIdentified "2013-05-08";
+	dwc:family "Rubiaceae";
+	dwc:genus "Hedyotis";
+	dwc:identifiedBy "Steven J. Baskauf";
+	dwc:nameAccordingTo "Gleason, Henry A. and Arthur Cronquist, 1991. Manual of Vascular Plants of Northeastern United States and Adjacent Canada. The New York Botanical Garden, Bronx, NY, US. urn:isbn:0893273651";
+	dwc:scientificName "Hedyotis crassifolia Raf.";
+	dwc:scientificNameAuthorship "Raf.";
+	dwc:specificEpithet "crassifolia";
+	dwc:taxonRank "species";
+	dwc:vernacularName "small bluet"@en;
+	dwcuri:identifiedBy <http://viaf.org/viaf/63557389>;
+	a dwctype:Identification.
+	
+<http://bioimages.vanderbilt.edu/ind-baskauf/35052#2013-08-21estesld> 
+	dcterms:description "Determination of Houstonia pusilla Schoepf sensu Terrell 1996 for the individual http://bioimages.vanderbilt.edu/ind-baskauf/87880"@en;
+	dsw:idBasedOn <http://apsc.apsu.edu/APSC:vascular:39274>;
+	dsw:identifies <http://bioimages.vanderbilt.edu/ind-baskauf/87880>;
+	dwc:dateIdentified "2013-08-21";
+	dwc:family "Rubiaceae";
+	dwc:genus "Houstonia";
+	dwc:identifiedBy "L. Dwayne Estes";
+	dwc:nameAccordingTo "Terrell, Edward E., 1996. Revision of Houstonia (Rubiaceae-Hedyotideae). Systematic Botany Monographs 48:1-118 http://www.jstor.org/stable/25027862";
+	dwc:scientificName "Houstonia pusilla Schoepf";
+	dwc:scientificNameAuthorship "Schoepf";
+	dwc:specificEpithet "pusilla";
+	dwc:taxonRank "species";
+	dwc:vernacularName "tiny bluet"@en;
+	a dwctype:Identification.	
+	
+		
+<http://bioimages.vanderbilt.edu/baskauf/87880#occ> 
+	dsw:atEvent <http://bioimages.vanderbilt.edu/baskauf/87880#eve>;
+	dsw:hasEvidence <http://bioimages.vanderbilt.edu/baskauf/87880>;
+	dsw:occurrenceOf <http://bioimages.vanderbilt.edu/ind-baskauf/87880>;
+	dwc:recordedBy "Steven J. Baskauf";
+	dwcuri:recordedBy <http://viaf.org/viaf/63557389>;
+	a dwctype:Occurrence.
+<http://bioimages.vanderbilt.edu/baskauf/87880#eve> 
+	dsw:eventOf <http://bioimages.vanderbilt.edu/baskauf/87880#occ>;
+	dsw:locatedAt <http://bioimages.vanderbilt.edu/baskauf/87880#loc>;
+	dwc:eventDate "2013-03-17T13:52:28";
+	a dcmitype:Event.
+	
+<http://bioimages.vanderbilt.edu/baskauf/87937#occ> 
+	dsw:atEvent <http://bioimages.vanderbilt.edu/baskauf/87937#eve>;
+	dsw:hasEvidence <http://bioimages.vanderbilt.edu/baskauf/87937>;
+	dsw:occurrenceOf <http://bioimages.vanderbilt.edu/ind-baskauf/87880>;
+	dwc:recordedBy "Steven J. Baskauf";
+	dwcuri:recordedBy <http://viaf.org/viaf/63557389>;
+	a dwctype:Occurrence.
+<http://bioimages.vanderbilt.edu/baskauf/87937#eve> 
+	dsw:eventOf <http://bioimages.vanderbilt.edu/baskauf/87937#occ>;
+	dsw:locatedAt <http://bioimages.vanderbilt.edu/baskauf/87880#loc>;
+	dwc:eventDate "2013-04-29T18:31:15";
+	a dcmitype:Event.
+	
+<http://bioimages.vanderbilt.edu/baskauf/87880#loc> 
+	dsw:locates 
+		<http://bioimages.vanderbilt.edu/baskauf/87880#eve>,
+		<http://bioimages.vanderbilt.edu/baskauf/87937#eve>;
+	dwc:continent "North America";
+	dwc:coordinateUncertaintyInMeters "10"^^xsd:int;
+	dwc:country "United States";
+	dwc:countryCode "US";
+	dwc:county "Cheatham";
+	dwc:decimalLatitude 36.38371;
+	dwc:decimalLongitude -87.00771;
+	dwc:geodeticDatum "EPSG:4326";
+	dwc:locality "Keri Dr., Pleasant View";
+	dwc:maximumElevationInMeters "200"^^xsd:int;
+	dwc:minimumElevationInMeters "200"^^xsd:int;
+	dwc:stateProvince "Tennessee";
+	dwcuri:inDescribedPlace <http://sws.geonames.org/4612891/>;
+	a dcterms:Location.
+
+
+<http://bioimages.vanderbilt.edu/baskauf/87880> 
+	Iptc4xmpExt:creditLine "Steven J. Baskauf http://bioimages.vanderbilt.edu/";
+	xmpRights:UsageTerms "Available under Creative Commons Attribution-Noncommercial-Share Alike 3.0 license";
+	xmpRights:WebStatement "http://creativecommons.org/licenses/by-nc-sa/3.0/";
+	xmpRights:owner "Steven J. Baskauf";
+	dc:creator "Steven J. Baskauf";
+	dc:rights "(c) 2013 Steven J. Baskauf";
+	dcterms:created "2013-03-17T13:52:28";
+	dcterms:creator <http://viaf.org/viaf/63557389>;
+	dcterms:description "Image of Hedyotis crassifolia (Rubiaceae) - whole plant - in flower - general view"@en;
+	dcterms:identifier "http://bioimages.vanderbilt.edu/baskauf/87880";
+	dcterms:title "Hedyotis crassifolia (Rubiaceae) - whole plant - in flower - general view"@en;
+	dcterms:type dcmitype:StillImage;
+	dsw:derivedFrom <http://bioimages.vanderbilt.edu/ind-baskauf/87880>;
+	dsw:evidenceFor <http://bioimages.vanderbilt.edu/baskauf/87880#occ>;
+	dsw:isBasisForId <http://bioimages.vanderbilt.edu/ind-baskauf/87880#2013-05-08baskauf>;
+	ac:attributionLinkURL "http://bioimages.vanderbilt.edu/contact/baskauf.htm";
+	ac:attributionLogoURL "http://bioimages.vanderbilt.edu/contact/baskauf-logo";
+	ac:hasServiceAccessPoint 
+		<http://bioimages.vanderbilt.edu/baskauf/87880#bq>,
+		<http://bioimages.vanderbilt.edu/baskauf/87880#gq>,
+		<http://bioimages.vanderbilt.edu/baskauf/87880#lq>,
+		<http://bioimages.vanderbilt.edu/baskauf/87880#tn>;
+	ac:metadataLanguage "en";
+	dwcuri:inCollection <http://biocol.org/urn:lsid:biocol.org:col:35115>;
+	mbank:view "463267";
+	a dcmitype:StillImage;
+	foaf:depicts <http://bioimages.vanderbilt.edu/ind-baskauf/87880>;
+	foaf:isPrimaryTopicOf <http://bioimages.vanderbilt.edu/baskauf/87880.htm>.
+	
+<http://bioimages.vanderbilt.edu/baskauf/87880#bq> 
+	dc:format "image/jpeg";
+	ac:accessURL "http://www.morphbank.net/?id=829502&imgType=jpeg";
+	ac:variant "Best Quality";
+	mix:imageHeight "2304";
+	mix:imageWidth "3456";
+	a <http://rs.tdwg.org/ac/type/ServiceAccessPoint>.
+<http://bioimages.vanderbilt.edu/baskauf/87880#gq> 
+	dc:format "image/jpeg";
+	ac:accessURL "http://bioimages.vanderbilt.edu/gq/baskauf/g87880.jpg";
+	ac:variant "Good Quality";
+	mix:imageHeight "683";
+	mix:imageWidth "1024";
+	a <http://rs.tdwg.org/ac/type/ServiceAccessPoint>.
+<http://bioimages.vanderbilt.edu/baskauf/87880#lq> 
+	dc:format "image/jpeg";
+	ac:accessURL "http://bioimages.vanderbilt.edu/lq/baskauf/w87880.jpg";
+	ac:variant "Lower Quality";
+	mix:imageHeight "320";
+	mix:imageWidth "480";
+	a <http://rs.tdwg.org/ac/type/ServiceAccessPoint>.
+<http://bioimages.vanderbilt.edu/baskauf/87880#tn> 
+	dc:format "image/jpeg";
+	ac:accessURL "http://bioimages.vanderbilt.edu/tn/baskauf/t87880.jpg";
+	ac:variant "Thumbnail";
+	mix:imageHeight "67";
+	mix:imageWidth "100";
+	a <http://rs.tdwg.org/ac/type/ServiceAccessPoint>.
+	
+<http://bioimages.vanderbilt.edu/baskauf/87937> 
+	Iptc4xmpExt:creditLine "Steven J. Baskauf http://bioimages.vanderbilt.edu/";
+	xmpRights:UsageTerms "Available under Creative Commons Attribution-Noncommercial-Share Alike 3.0 license";
+	xmpRights:WebStatement "http://creativecommons.org/licenses/by-nc-sa/3.0/";
+	xmpRights:owner "Steven J. Baskauf";
+	dc:creator "Steven J. Baskauf";
+	dc:rights "(c) 2013 Steven J. Baskauf";
+	dcterms:created "2013-04-29T18:31:15";
+	dcterms:creator <http://viaf.org/viaf/63557389>;
+	dcterms:description "Image of Hedyotis crassifolia (Rubiaceae) - fruit - lateral or general close-up"@en;
+	dcterms:identifier "http://bioimages.vanderbilt.edu/baskauf/87937";
+	dcterms:title "Hedyotis crassifolia (Rubiaceae) - fruit - lateral or general close-up"@en;
+	dcterms:type dcmitype:StillImage;
+	dsw:derivedFrom <http://bioimages.vanderbilt.edu/ind-baskauf/87880>;
+	dsw:evidenceFor <http://bioimages.vanderbilt.edu/baskauf/87937#occ>;
+	dsw:isBasisForId <http://bioimages.vanderbilt.edu/ind-baskauf/87880#2013-05-08baskauf>;
+	ac:attributionLinkURL "http://bioimages.vanderbilt.edu/contact/baskauf.htm";
+	ac:attributionLogoURL "http://bioimages.vanderbilt.edu/contact/baskauf-logo";
+	ac:hasServiceAccessPoint 
+		<http://bioimages.vanderbilt.edu/baskauf/87937#bq>,
+		<http://bioimages.vanderbilt.edu/baskauf/87937#gq>,
+		<http://bioimages.vanderbilt.edu/baskauf/87937#lq>,
+		<http://bioimages.vanderbilt.edu/baskauf/87937#tn>;
+	ac:metadataLanguage "en";
+	dwcuri:inCollection <http://biocol.org/urn:lsid:biocol.org:col:35115>;
+	mbank:view "463931";
+	a dcmitype:StillImage;
+	foaf:depicts <http://bioimages.vanderbilt.edu/ind-baskauf/87880>;
+	foaf:isPrimaryTopicOf <http://bioimages.vanderbilt.edu/baskauf/87937.htm>.
+	
+<http://bioimages.vanderbilt.edu/baskauf/87937#bq> 
+	dc:format "image/jpeg";
+	ac:accessURL "http://www.morphbank.net/?id=829509&imgType=jpeg";
+	ac:variant "Best Quality";
+	mix:imageHeight "3456";
+	mix:imageWidth "2304";
+	a <http://rs.tdwg.org/ac/type/ServiceAccessPoint>.
+<http://bioimages.vanderbilt.edu/baskauf/87937#gq> 
+	dc:format "image/jpeg";
+	ac:accessURL "http://bioimages.vanderbilt.edu/gq/baskauf/g87880.jpg";
+	ac:variant "Good Quality";
+	mix:imageHeight "1024";
+	mix:imageWidth "683";
+	a <http://rs.tdwg.org/ac/type/ServiceAccessPoint>.
+<http://bioimages.vanderbilt.edu/baskauf/87937#lq> 
+	dc:format "image/jpeg";
+	ac:accessURL "http://bioimages.vanderbilt.edu/lq/baskauf/w87880.jpg";
+	ac:variant "Lower Quality";
+	mix:imageHeight "480";
+	mix:imageWidth "320";
+	a <http://rs.tdwg.org/ac/type/ServiceAccessPoint>.
+<http://bioimages.vanderbilt.edu/baskauf/87937#tn> 
+	dc:format "image/jpeg";
+	ac:accessURL "http://bioimages.vanderbilt.edu/tn/baskauf/t87880.jpg";
+	ac:variant "Thumbnail";
+	mix:imageHeight "100";
+	mix:imageWidth "67";
+	a <http://rs.tdwg.org/ac/type/ServiceAccessPoint>.
+	
+	
+<http://apsc.apsu.edu/APSC:vascular:39274> 
+	dc:creator "Austin Peay State University Herbarium (APSC)";
+	dcterms:created "2013-08-21";
+	dcterms:creator <http://biocol.org/urn:lsid:biocol.org:col:xxxxx>;
+	dcterms:description "Preserved specimen http://apsc.apsu.edu/APSC:vascular:39274"@en;
+	dcterms:identifier "http://apsc.apsu.edu/APSC:vascular:39274";
+	dcterms:isPartOf <http://bioimages.vanderbilt.edu/ind-baskauf/87880>;
+	dcterms:type dcmitype:PhysicalObject;
+	dsw:derivedFrom <http://bioimages.vanderbilt.edu/ind-baskauf/87880>;
+	dsw:evidenceFor <http://bioimages.vanderbilt.edu/baskauf/87937#occ>;
+	dsw:isBasisForId <http://bioimages.vanderbilt.edu/ind-baskauf/35052#2013-08-21estesld>;
+	dwc:basisOfRecord "PreservedSpecimen";
+	dwc:catalogNumber "39274";
+	dwc:collectionCode "vascular";
+	dwc:institutionCode "APSC";
+	dwc:preparations "whole plant - dried";
+	dwcuri:inCollection <http://biocol.org/urn:lsid:biocol.org:col:xxxxx>;
+	a dwctype:PreservedSpecimen.
+	
+
+<http://bioimages.vanderbilt.edu/ind-baskauf/87880.rdf> 
+	dc:creator "Bioimages http://bioimages.vanderbilt.edu/";
+    dc:language "en";
+    dcterms:creator <http://biocol.org/urn:lsid:biocol.org:col:35115>;
+    dcterms:identifier "http://bioimages.vanderbilt.edu/ind-baskauf/87880.rdf";
+    dcterms:language <http://id.loc.gov/vocabulary/languages/eng>;
+    dcterms:modified "2013-09-01T20:05:13";
+    dcterms:references 
+    	<http://apsc.apsu.edu/APSC:vascular:39274>,
+		<http://bioimages.vanderbilt.edu/baskauf/87880>,
+		<http://bioimages.vanderbilt.edu/baskauf/87880#bq>,
+		<http://bioimages.vanderbilt.edu/baskauf/87880#eve>,
+		<http://bioimages.vanderbilt.edu/baskauf/87880#gq>,
+		<http://bioimages.vanderbilt.edu/baskauf/87880#loc>,
+		<http://bioimages.vanderbilt.edu/baskauf/87880#lq>,
+		<http://bioimages.vanderbilt.edu/baskauf/87880#occ>,
+		<http://bioimages.vanderbilt.edu/baskauf/87880#tn>,
+		<http://bioimages.vanderbilt.edu/baskauf/87937>,
+		<http://bioimages.vanderbilt.edu/baskauf/87937#bq>,
+		<http://bioimages.vanderbilt.edu/baskauf/87937#eve>,
+		<http://bioimages.vanderbilt.edu/baskauf/87937#gq>,
+		<http://bioimages.vanderbilt.edu/baskauf/87937#lq>,
+		<http://bioimages.vanderbilt.edu/baskauf/87937#occ>,
+		<http://bioimages.vanderbilt.edu/baskauf/87937#tn>,
+		<http://bioimages.vanderbilt.edu/ind-baskauf/87880>,
+		<http://bioimages.vanderbilt.edu/ind-baskauf/87880#2013-05-08baskauf>;
+a foaf:Document.

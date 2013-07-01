@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+xmlns:owl="http://www.w3.org/2002/07/owl#"
+xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
+xmlns:dwctype="http://rs.tdwg.org/dwc/dwctype/"
+xmlns:dwcuri="http://rs.tdwg.org/dwc/uri/"
+xmlns:dcterms="http://purl.org/dc/terms/"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:dcmitype="http://purl.org/dc/dcmitype/"
+xmlns:foaf="http://xmlns.com/foaf/0.1/"
+xmlns:ac="http://rs.tdwg.org/ac/terms/"
+xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+xmlns:xmpRights="http://ns.adobe.com/xap/1.0/rights/"
+xmlns:Iptc4xmpExt="http://iptc.org/std/Iptc4xmpExt/2008-02-29/"
+xmlns:dsw="http://purl.org/dsw/"
+xmlns:mix="http://www.loc.gov/mix/v20"
+xmlns:mbank="http://www.morphbank.net/schema/morphbank#"
+xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+xmlns:txn="http://lod.taxonconcept.org/ontology/txn.owl#"
+>
+
+<rdf:Description rdf:about="http://bioimages.vanderbilt.edu/ind-baskauf/87880">
+	<rdf:type rdf:resource ="http://purl.org/dsw/IndividualOrganism" />
+	
+	<!-- Resources derived from the individual -->
+	<foaf:depiction rdf:resource="http://bioimages.vanderbilt.edu/baskauf/87880"/>
+	<foaf:depiction rdf:resource="http://bioimages.vanderbilt.edu/baskauf/87937"/>
+	<dcterms:hasPart rdf:resource="http://apsc.apsu.edu/APSC:vascular:39274"/>
+	<dsw:hasDerivative rdf:resource="http://bioimages.vanderbilt.edu/baskauf/87880"/>
+	<dsw:hasDerivative rdf:resource="http://bioimages.vanderbilt.edu/baskauf/87937"/>
+	<dsw:hasDerivative rdf:resource="http://apsc.apsu.edu/APSC:vascular:39274"/>
+	
+	<!-- Documented Occurrences of the individual -->
+	<dsw:hasOccurrence rdf:resource="http://bioimages.vanderbilt.edu/baskauf/87880#occ"/>
+	<dsw:hasOccurrence rdf:resource="http://bioimages.vanderbilt.edu/baskauf/87937#occ"/>
+	
+	<!-- Identifications applied to the individual-->
+	<dsw:hasIdentification rdf:resource ="http://bioimages.vanderbilt.edu/ind-baskauf/87880#2013-05-08baskauf" />
+	<dsw:hasIdentification rdf:resource ="http://bioimages.vanderbilt.edu/ind-baskauf/35052#2013-08-21estesld" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://bioimages.vanderbilt.edu/ind-baskauf/87880#2013-05-08baskauf">
+	<rdf:type rdf:resource ="http://rs.tdwg.org/dwc/dwctype/Identification" />
+	<dwcuri:identifiedBy rdf:resource ="http://viaf.org/viaf/63557389" />
+
+	<!-- Relationship of the determination to other resources -->
+	<dsw:idBasedOn rdf:resource="http://bioimages.vanderbilt.edu/baskauf/87880"/>
+	<dsw:idBasedOn rdf:resource="http://bioimages.vanderbilt.edu/baskauf/87937"/>
+	<dsw:identifies rdf:resource ="http://bioimages.vanderbilt.edu/ind-baskauf/87880" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://bioimages.vanderbilt.edu/ind-baskauf/35052#2013-08-21estesld">
+	<rdf:type rdf:resource ="http://rs.tdwg.org/dwc/dwctype/Identification" />
+
+	<!-- Relationship of the determination to other resources -->
+	<dsw:idBasedOn rdf:resource="http://apsc.apsu.edu/APSC:vascular:39274"/>
+	<dsw:identifies rdf:resource ="http://bioimages.vanderbilt.edu/ind-baskauf/87880" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://bioimages.vanderbilt.edu/baskauf/87880">
+	<rdf:type rdf:resource ="http://purl.org/dc/dcmitype/StillImage" />
+	<dcterms:creator rdf:resource ="http://viaf.org/viaf/63557389" />
+	<dwcuri:inCollection rdf:resource ="http://biocol.org/urn:lsid:biocol.org:col:35115" />
+		
+	<!-- Relationships of the image to other resources.  -->
+	<dsw:derivedFrom rdf:resource="http://bioimages.vanderbilt.edu/ind-baskauf/87880" />
+	<foaf:depicts rdf:resource="http://bioimages.vanderbilt.edu/ind-baskauf/87880" />
+	<dsw:evidenceFor rdf:resource="http://bioimages.vanderbilt.edu/baskauf/87880#occ" />
+	<dsw:isBasisForId rdf:resource="http://bioimages.vanderbilt.edu/ind-baskauf/87880#2013-05-08baskauf"/>
+	<!-- Links to ServiceAccessPoints -->
+	<ac:hasServiceAccessPoint rdf:resource="http://bioimages.vanderbilt.edu/baskauf/87880#bq" />
+	<ac:hasServiceAccessPoint rdf:resource="http://bioimages.vanderbilt.edu/baskauf/87880#tn" />
+	<ac:hasServiceAccessPoint rdf:resource="http://bioimages.vanderbilt.edu/baskauf/87880#lq" />
+	<ac:hasServiceAccessPoint rdf:resource="http://bioimages.vanderbilt.edu/baskauf/87880#gq" />
+</rdf:Description>
+	
+<rdf:Description rdf:about="http://bioimages.vanderbilt.edu/baskauf/87880#occ">
+	<rdf:type rdf:resource ="http://rs.tdwg.org/dwc/dwctype/Occurrence" />
+	<dwcuri:recordedBy rdf:resource ="http://viaf.org/viaf/63557389" />
+	<dsw:atEvent rdf:resource ="http://bioimages.vanderbilt.edu/baskauf/87880#eve" />
+	<dsw:occurrenceOf rdf:resource="http://bioimages.vanderbilt.edu/ind-baskauf/87880" />
+	<dsw:hasEvidence rdf:resource="http://bioimages.vanderbilt.edu/baskauf/87880" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://bioimages.vanderbilt.edu/baskauf/87880#eve">
+	<rdf:type rdf:resource ="http://purl.org/dc/dcmitype/Event" />
+	<dsw:eventOf rdf:resource="http://bioimages.vanderbilt.edu/baskauf/87880#occ" />
+	<dsw:locatedAt rdf:resource ="http://bioimages.vanderbilt.edu/baskauf/87880#loc" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://bioimages.vanderbilt.edu/baskauf/87880#loc">
+	<rdf:type rdf:resource ="http://purl.org/dc/terms/Location" />
+	<dwcuri:inDescribedPlace rdf:resource="http://sws.geonames.org/4612891/"/>
+	<dsw:locates rdf:resource="http://bioimages.vanderbilt.edu/baskauf/87880#eve" />
+	<dsw:locates rdf:resource="http://bioimages.vanderbilt.edu/baskauf/87937#eve" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://bioimages.vanderbilt.edu/baskauf/87937">
+	<rdf:type rdf:resource ="http://purl.org/dc/dcmitype/StillImage" />
+	<dcterms:creator rdf:resource ="http://viaf.org/viaf/63557389" />
+	<dwcuri:inCollection rdf:resource ="http://biocol.org/urn:lsid:biocol.org:col:35115" />
+		
+	<!-- Relationships of the image to other resources.  -->
+	<foaf:isPrimaryTopicOf rdf:resource="http://bioimages.vanderbilt.edu/baskauf/87937.htm" />
+	<dsw:derivedFrom rdf:resource="http://bioimages.vanderbilt.edu/ind-baskauf/87880" />
+	<foaf:depicts rdf:resource="http://bioimages.vanderbilt.edu/ind-baskauf/87880" />
+	<dsw:evidenceFor rdf:resource="http://bioimages.vanderbilt.edu/baskauf/87937#occ" />
+	<dsw:isBasisForId rdf:resource="http://bioimages.vanderbilt.edu/ind-baskauf/87880#2013-05-08baskauf"/>
+	<!-- Links to ServiceAccessPoints -->
+	<ac:hasServiceAccessPoint rdf:resource="http://bioimages.vanderbilt.edu/baskauf/87937#bq" />
+	<ac:hasServiceAccessPoint rdf:resource="http://bioimages.vanderbilt.edu/baskauf/87937#tn" />
+	<ac:hasServiceAccessPoint rdf:resource="http://bioimages.vanderbilt.edu/baskauf/87937#lq" />
+	<ac:hasServiceAccessPoint rdf:resource="http://bioimages.vanderbilt.edu/baskauf/87937#gq" />
+</rdf:Description>
+	
+<rdf:Description rdf:about="http://bioimages.vanderbilt.edu/baskauf/87937#occ">
+	<rdf:type rdf:resource ="http://rs.tdwg.org/dwc/dwctype/Occurrence" />
+	<dwcuri:recordedBy rdf:resource ="http://viaf.org/viaf/63557389" />
+	<dsw:atEvent rdf:resource ="http://bioimages.vanderbilt.edu/baskauf/87937#eve" />
+	<dsw:occurrenceOf rdf:resource="http://bioimages.vanderbilt.edu/ind-baskauf/87880" />
+	<dsw:hasEvidence rdf:resource="http://bioimages.vanderbilt.edu/baskauf/87937" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://bioimages.vanderbilt.edu/baskauf/87937#eve">
+	<rdf:type rdf:resource ="http://purl.org/dc/dcmitype/Event" />
+	<dsw:eventOf rdf:resource="http://bioimages.vanderbilt.edu/baskauf/87937#occ" />
+	<dsw:locatedAt rdf:resource ="http://bioimages.vanderbilt.edu/baskauf/87880#loc" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://apsc.apsu.edu/APSC:vascular:39274">
+	<rdf:type rdf:resource ="http://rs.tdwg.org/dwc/dwctype/PreservedSpecimen" />
+	<dcterms:creator rdf:resource="http://biocol.org/urn:lsid:biocol.org:col:xxxxx" />
+	<dwcuri:inCollection rdf:resource ="http://biocol.org/urn:lsid:biocol.org:col:xxxxx" />
+	<dcterms:isPartOf rdf:resource="http://bioimages.vanderbilt.edu/ind-baskauf/87880"/>
+	<dsw:derivedFrom rdf:resource="http://bioimages.vanderbilt.edu/ind-baskauf/87880" />
+	<dsw:evidenceFor rdf:resource="http://bioimages.vanderbilt.edu/baskauf/87937#occ" />
+	<dsw:isBasisForId rdf:resource="http://bioimages.vanderbilt.edu/ind-baskauf/35052#2013-08-21estesld"/>
+</rdf:Description>
+
+
+</rdf:RDF>

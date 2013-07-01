@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+This RDF is structured as described at http://code.google.com/p/darwin-sw/ version 0.3 
+It was generated (partly) by Guid-O-Matic 2.1 (http://bioimages.vanderbilt.edu/guid-o-matic/index.htm)
+-->
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+xmlns:owl="http://www.w3.org/2002/07/owl#"
+xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
+xmlns:dwctype="http://rs.tdwg.org/dwc/dwctype/"
+xmlns:dwcuri="http://rs.tdwg.org/dwc/uri/"
+xmlns:dcterms="http://purl.org/dc/terms/"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:dcmitype="http://purl.org/dc/dcmitype/"
+xmlns:foaf="http://xmlns.com/foaf/0.1/"
+xmlns:ac="http://rs.tdwg.org/ac/terms/"
+xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+xmlns:xmpRights="http://ns.adobe.com/xap/1.0/rights/"
+xmlns:dsw="http://purl.org/dsw/"
+xmlns:tc="http://rs.tdwg.org/ontology/voc/TaxonConcept#"
+xmlns:tn="http://rs.tdwg.org/ontology/voc/TaxonName#"
+xmlns:mix="http://www.loc.gov/mix/v20"
+xmlns:bibo="http://purl.org/ontology/bibo/"
+xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+>
+<rdf:Description rdf:about="http://arctos.database.museum/guid/MVZ:Bird:21465#ind">
+     <ac:metadataLanguage>en</ac:metadataLanguage>
+     <dcterms:description>Individual organism http://arctos.database.museum/guid/MVZ:Bird:21465#ind</dcterms:description>
+     <rdf:type rdf:resource ="http://purl.org/dsw/IndividualOrganism" />
+     <dcterms:type rdf:resource ="http://purl.org/dc/dcmitype/PhysicalObject" />
+     <dsw:hasIdentification>
+          <rdf:Description rdf:about="http://arctos.database.museum/guid/MVZ:Bird:21465#2013-03-28baskauf">
+               <rdf:type rdf:resource ="http://rs.tdwg.org/dwc/dwctype/Identification" />
+               <dwc:identifiedBy>Steven J. Baskauf</dwc:identifiedBy>
+               <dsw:idBy rdf:resource ="http://bioimages.vanderbilt.edu/contact/baskauf" />
+               <dwc:dateIdentified>2013-03-28</dwc:dateIdentified>
+               <dsw:identifies rdf:resource ="http://arctos.database.museum/guid/MVZ:Bird:21465#ind" />
+               <dsw:idBasedOn rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465#ind"/>
+               <dsw:toTaxon>
+                    <tc:TaxonConcept>
+                         <tc:hasName>
+                             <tn:TaxonName>
+                                  <dcterms:title>Corvus caurinus Baird, 1858</dcterms:title>
+                                  <tn:genusPart>Corvus</tn:genusPart>
+                                  <tn:specificEpithet>caurinus</tn:specificEpithet>
+                                  <tn:authorship>Baird</tn:authorship>
+                                  <tn:year>1858</tn:year>
+                                  <tn:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/>
+                             </tn:TaxonName>
+                        </tc:hasName>
+                        <tc:accordingTo rdf:resource="urn:isbn:1582381283"/>
+                   </tc:TaxonConcept>
+               </dsw:toTaxon>
+          </rdf:Description>
+     </dsw:hasIdentification>
+     <dsw:hasIdentification>
+          <rdf:Description rdf:about="http://arctos.database.museum/guid/MVZ:Bird:21465#2013-03-29schildhauer">
+               <rdf:type rdf:resource ="http://rs.tdwg.org/dwc/dwctype/Identification" />
+               <dwc:identifiedBy>Mark Schildhauer</dwc:identifiedBy>
+               <dwc:dateIdentified>2013-03-29</dwc:dateIdentified>
+               <dsw:identifies rdf:resource ="http://arctos.database.museum/guid/MVZ:Bird:21465#ind" />
+               <dsw:idBasedOn rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465"/>
+               <dsw:toTaxon>
+                    <tc:TaxonConcept>
+                         <tc:hasName>
+                             <tn:TaxonName>
+                                  <dcterms:title>Corvus brachyrhynchos Baird, 1858</dcterms:title>
+                                  <tn:genusPart>Corvus</tn:genusPart>
+                                  <tn:specificEpithet>brachyrhynchos</tn:specificEpithet>
+                                  <tn:authorship>Brehm</tn:authorship>
+                                  <tn:year>1822</tn:year>
+                                  <tn:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/>
+                             </tn:TaxonName>
+                        </tc:hasName>
+                        <tc:accordingTo rdf:resource="urn:isbn:1582381283"/>
+                   </tc:TaxonConcept>
+               </dsw:toTaxon>
+          </rdf:Description>
+     </dsw:hasIdentification>
+     <dsw:hasDerivative rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465" />
+     <dsw:hasDerivative rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465a" />
+     <dsw:hasDerivative rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465b" />
+     <dsw:hasDerivative rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465c" />
+     <dsw:hasDerivative rdf:resource="http://mrc.mbl.edu/255A4410-DF04-40D2-9977-0FF276AE5F3B" />
+     <dsw:hasDerivative rdf:resource="http://calphotos.berkeley.edu/0000000005101862" />
+     <dcterms:hasPart rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465" />
+     <dsw:hasOccurrence rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465#occ" />
+</rdf:Description>
+<rdf:Description rdf:about="http://arctos.database.museum/guid/MVZ:Bird:21465">
+     <ac:metadataLanguage>en</ac:metadataLanguage>
+     <dcterms:description>Preserved specimen http://arctos.database.museum/guid/MVZ:Bird:21465</dcterms:description>
+     <rdf:type rdf:resource ="http://rs.tdwg.org/dwc/dwctype/PreservedSpecimen" />
+     <dcterms:type rdf:resource ="http://purl.org/dc/dcmitype/PhysicalObject" />
+     <dc:creator>University of California Berkeley Museum of Vertebrate Zoology</dc:creator>
+     <foaf:maker rdf:resource="http://biocol.org/urn:lsid:biocol.org:col:34777"/>
+     <dcterms:created>2013-03-28</dcterms:created>
+     <dsw:collectionURI rdf:resource ="http://biocol.org/urn:lsid:biocol.org:col:34777" />
+     <dwc:preparations>whole animal (dried)</dwc:preparations>
+     <dwc:disposition>specimen separated to skin, skeleton, and stomach preps on 2013-06-19</dwc:disposition>
+     <dsw:derivedFrom rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465#ind" />
+     <dcterms:isPartOf rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465#ind" />
+     <dsw:evidenceFor rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465#occ" />
+     <dsw:hasDerivative rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465a" />
+     <dsw:hasDerivative rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465b" />
+     <dsw:hasDerivative rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465c" />
+     <dsw:hasDerivative rdf:resource="http://mrc.mbl.edu/255A4410-DF04-40D2-9977-0FF276AE5F3B" />
+     <dsw:hasDerivative rdf:resource="http://calphotos.berkeley.edu/0000000005101862" />
+     <dcterms:hasPart rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465a" />
+     <dcterms:hasPart rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465b" />
+     <dcterms:hasPart rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465c" />
+</rdf:Description>
+<rdf:Description rdf:about="http://arctos.database.museum/guid/MVZ:Bird:21465a">
+     <ac:metadataLanguage>en</ac:metadataLanguage>
+     <dcterms:description>Preserved specimen http://arctos.database.museum/guid/MVZ:Bird:21465a</dcterms:description>
+     <rdf:type rdf:resource ="http://rs.tdwg.org/dwc/dwctype/PreservedSpecimen" />
+     <dcterms:type rdf:resource ="http://purl.org/dc/dcmitype/PhysicalObject" />
+     <dc:creator>University of California Berkeley Museum of Vertebrate Zoology</dc:creator>
+     <foaf:maker rdf:resource="http://biocol.org/urn:lsid:biocol.org:col:34777"/>
+     <dcterms:created>2013-06-19</dcterms:created>
+     <dsw:collectionURI rdf:resource ="http://biocol.org/urn:lsid:biocol.org:col:34777" />
+     <dwc:preparations>study skin</dwc:preparations>
+     <dsw:derivedFrom rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465#ind" />
+     <dsw:derivedFrom rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465" />
+     <dsw:hasDerivative rdf:resource="http://calphotos.berkeley.edu/0000000005101862" />
+     <dcterms:isPartOf rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465" />
+     <dsw:evidenceFor rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465#occ" />
+     <foaf:depiction rdf:resource="http://calphotos.berkeley.edu/0000000005101862" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://calphotos.berkeley.edu/0000000005101862">
+     <ac:metadataLanguage>en</ac:metadataLanguage>
+     <rdf:type rdf:resource ="http://purl.org/dc/dcmitype/StillImage" />
+     <dcterms:identifier>0000 0000 0510 1862</dcterms:identifier>
+     <dcterms:creator>Roger G. Smith</dcterms:creator>
+     <foaf:maker rdf:resource ="http://calphotos.berkeley.edu/staff/smithrg" />
+     <dcterms:created>2017-10-13T12:42:24</dcterms:created>
+     <dc:rights>(c) 2017 UC Regents. All rights reserved.</dc:rights>
+     <xmpRights:owner>CalPhotos, University of California, Berkeley</xmpRights:owner>
+     <dcterms:title>Study skin of Corvus brachyrhynchos</dcterms:title>
+     <xmpRights:UsageTerms>Available under Creative Commons Attribution-Noncommercial-Share Alike 3.0 license</xmpRights:UsageTerms>
+     <xmpRights:WebStatement>http://creativecommons.org/licenses/by-nc-sa/3.0/</xmpRights:WebStatement>
+     <dcterms:description>Image of the dorsal surface of a study skin of Corvus brachyrhynchos</dcterms:description>
+     <dsw:derivedFrom rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465#ind" />
+     <dsw:derivedFrom rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465" />
+     <dsw:derivedFrom rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465a" />
+     <foaf:depicts rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465a" />
+<!--
+Links to ServiceAccessPoints
+-->
+<ac:hasServiceAccessPoint rdf:resource="http://calphotos.berkeley.edu/0000000005101862#tn" />
+<ac:hasServiceAccessPoint rdf:resource="http://calphotos.berkeley.edu/0000000005101862#lq" />
+<ac:hasServiceAccessPoint rdf:resource="http://calphotos.berkeley.edu/0000000005101862#gq" />
+</rdf:Description>
+<!--
+ServiceAccessPoints provide information about alternative versions of the image having different resolutions
+-->
+<rdf:Description rdf:about="http://calphotos.berkeley.edu/0000000005101862#gq">
+<rdf:type rdf:resource ="http://xxx.org/XXX/ServiceAccessPoint" />
+<ac:variant>Best Quality</ac:variant>
+<ac:accessURL>http://calphotos.berkeley.edu/imgs/512x768/0000_0000/0510/1862.jpeg</ac:accessURL>
+<dcterms:format>image/jpeg</dcterms:format>
+<mix:imageWidth>512</mix:imageWidth>
+<mix:imageHeight>768</mix:imageHeight>
+</rdf:Description>
+<rdf:Description rdf:about="http://calphotos.berkeley.edu/0000000005101862#tn">
+<rdf:type rdf:resource ="http://xxx.org/XXX/ServiceAccessPoint" />
+<ac:variant>Thumbnail</ac:variant>
+<ac:accessURL>http://calphotos.berkeley.edu/imgs/67x100/0000_0000/0510/1862.jpeg</ac:accessURL>
+<dcterms:format>image/jpeg</dcterms:format>
+<mix:imageWidth>67</mix:imageWidth>
+<mix:imageHeight>100</mix:imageHeight>
+</rdf:Description>
+<rdf:Description rdf:about="http://calphotos.berkeley.edu/0000000005101862#lq">
+<rdf:type rdf:resource ="http://xxx.org/XXX/ServiceAccessPoint" />
+<ac:variant>Lower Quality</ac:variant>
+<ac:accessURL>http://calphotos.berkeley.edu/imgs/320x480/0000_0000/0510/1862.jpeg</ac:accessURL>
+<dcterms:format>image/jpeg</dcterms:format>
+<mix:imageWidth>320</mix:imageWidth>
+<mix:imageHeight>480</mix:imageHeight>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://arctos.database.museum/guid/MVZ:Bird:21465b">
+     <ac:metadataLanguage>en</ac:metadataLanguage>
+     <dcterms:description>Preserved specimen http://arctos.database.museum/guid/MVZ:Bird:21465b</dcterms:description>
+     <rdf:type rdf:resource ="http://rs.tdwg.org/dwc/dwctype/PreservedSpecimen" />
+     <dcterms:type rdf:resource ="http://purl.org/dc/dcmitype/PhysicalObject" />
+     <dc:creator>University of California Berkeley Museum of Vertebrate Zoology</dc:creator>
+     <foaf:maker rdf:resource="http://biocol.org/urn:lsid:biocol.org:col:34777"/>
+     <dcterms:created>2013-06-19</dcterms:created>
+     <dsw:collectionURI rdf:resource ="http://biocol.org/urn:lsid:biocol.org:col:34777" />
+     <dwc:preparations>skeleton</dwc:preparations>
+     <dsw:derivedFrom rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465#ind" />
+     <dsw:derivedFrom rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465" />
+     <dcterms:isPartOf rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465" />
+     <dsw:evidenceFor rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465#occ" />
+</rdf:Description>
+<rdf:Description rdf:about="http://arctos.database.museum/guid/MVZ:Bird:21465c">
+     <ac:metadataLanguage>en</ac:metadataLanguage>
+     <dcterms:description>Preserved specimen http://arctos.database.museum/guid/MVZ:Bird:21465c</dcterms:description>
+     <rdf:type rdf:resource ="http://rs.tdwg.org/dwc/dwctype/PreservedSpecimen" />
+     <dcterms:type rdf:resource ="http://purl.org/dc/dcmitype/PhysicalObject" />
+     <dc:creator>University of California Berkeley Museum of Vertebrate Zoology</dc:creator>
+     <foaf:maker rdf:resource="http://biocol.org/urn:lsid:biocol.org:col:34777"/>
+     <dcterms:created>2013-06-19</dcterms:created>
+     <dsw:collectionURI rdf:resource ="http://biocol.org/urn:lsid:biocol.org:col:34777" />
+     <dwc:preparations>stomach (70% ETOH)</dwc:preparations>
+     <dsw:derivedFrom rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465#ind" />
+     <dsw:derivedFrom rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465" />
+     <dcterms:isPartOf rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465" />
+     <dsw:evidenceFor rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465#occ" />
+     <dcterms:hasPart rdf:resource="http://mrc.mbl.edu/255A4410-DF04-40D2-9977-0FF276AE5F3B" />
+     <dsw:hasDerivative rdf:resource="http://mrc.mbl.edu/255A4410-DF04-40D2-9977-0FF276AE5F3B" />
+</rdf:Description>
+<rdf:Description rdf:about="http://mrc.mbl.edu/255A4410-DF04-40D2-9977-0FF276AE5F3B">
+     <ac:metadataLanguage>en</ac:metadataLanguage>
+     <dcterms:description>gut sample</dcterms:description>
+     <rdf:type rdf:resource ="http://rs.tdwg.org/dwc/dwctype/MaterialSample" />
+     <dcterms:type rdf:resource ="http://purl.org/dc/dcmitype/PhysicalObject" />
+     <dc:creator>Marine Resources Center, MBL</dc:creator>
+     <foaf:maker rdf:resource="http://mrc.mbl.edu/void"/>
+     <dcterms:created>2025-09-03</dcterms:created>
+     <dsw:collectionURI rdf:resource ="http://mrc.mbl.edu/meta/void" />
+     <dsw:derivedFrom rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465#ind" />
+     <dsw:derivedFrom rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465" />
+     <dsw:derivedFrom rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465c" />
+     <dcterms:isPartOf rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465c" />
+</rdf:Description>
+<rdf:Description rdf:about="http://arctos.database.museum/guid/MVZ:Bird:21465#occ">
+     <rdf:type rdf:resource ="http://rs.tdwg.org/dwc/dwctype/Occurrence" />
+     <dwc:recordedBy>John Deck</dwc:recordedBy>
+     <dwc:recordNumber>2</dwc:recordNumber>
+     <dwc:occurrenceRemarks>Shot while eating a starfish.</dwc:occurrenceRemarks>
+     <dsw:atEvent>
+         <rdf:Description rdf:about="http://arctos.database.museum/guid/MVZ:Bird:21465#eve">
+             <dwc:eventDate>2013-03-28</dwc:eventDate>
+             <rdf:type rdf:resource ="http://purl.org/dc/dcmitype/Event" />
+             <dsw:eventOf rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465#occ" />
+             <dsw:locatedAt>
+                 <rdf:Description rdf:about="http://arctos.database.museum/guid/MVZ:Bird:21465#loc">
+                     <rdf:type rdf:resource ="http://purl.org/dc/terms/Location" />
+                     <dsw:locates rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465#eve" />
+                     <geo:lat>47.662237</geo:lat>
+                     <geo:long>-122.434738</geo:long>
+                     <geo:alt>0</geo:alt>
+                     <dwc:coordinateUncertaintyInMeters>10</dwc:coordinateUncertaintyInMeters>
+                     <dwc:georeferenceRemarks>Location determined by handheld GPS receiver.</dwc:georeferenceRemarks>
+                     <dwc:continent>NA</dwc:continent>
+                     <dwc:countryCode>US</dwc:countryCode>
+                     <dwc:stateProvince>Washington</dwc:stateProvince>
+                     <dwc:county>King</dwc:county>
+                     <dwc:locality>On beach near West Point Lighthouse</dwc:locality>
+                 </rdf:Description>
+             </dsw:locatedAt>
+         </rdf:Description>
+     </dsw:atEvent>
+     <dsw:occurrenceOf rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465#ind" />
+     <dsw:hasEvidence rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://arctos.database.museum/guid/UAM:Inv:5497#ind">
+     <ac:metadataLanguage>en</ac:metadataLanguage>
+     <dcterms:description>Individual organism http://arctos.database.museum/guid/UAM:Inv:5497#ind</dcterms:description>
+     <rdf:type rdf:resource ="http://purl.org/dsw/IndividualOrganism" />
+     <dcterms:type rdf:resource ="http://purl.org/dc/dcmitype/PhysicalObject" />
+     <dsw:hasIdentification>
+          <rdf:Description rdf:about="http://arctos.database.museum/guid/UAM:Inv:5497#2013-03-28deck">
+               <rdf:type rdf:resource ="http://rs.tdwg.org/dwc/dwctype/Identification" />
+               <dwc:identifiedBy>John Deck</dwc:identifiedBy>
+               <dwc:dateIdentified>2013-03-28</dwc:dateIdentified>
+               <dsw:identifies rdf:resource ="http://arctos.database.museum/guid/UAM:Inv:5497#ind" />
+               <dsw:idBasedOn rdf:resource="http://arctos.database.museum/guid/UAM:Inv:5497"/>
+               <dsw:toTaxon>
+                    <tc:TaxonConcept>
+                         <tc:hasName>
+                             <tn:TaxonName>
+                                  <dcterms:title>Henricia leviuscula (Stimpson, 1857)</dcterms:title>
+                                  <tn:genusPart>Henricia</tn:genusPart>
+                                  <tn:specificEpithet>leviuscula</tn:specificEpithet>
+                                  <tn:authorship>Stimpson</tn:authorship>
+                                  <tn:year>1857</tn:year>
+                                  <tn:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/>
+                             </tn:TaxonName>
+                        </tc:hasName>
+                   </tc:TaxonConcept>
+               </dsw:toTaxon>
+          </rdf:Description>
+     </dsw:hasIdentification>
+     <dsw:hasDerivative rdf:resource="http://arctos.database.museum/guid/UAM:Inv:5497" />
+     <dsw:hasDerivative rdf:resource="http://www.mnh.si.edu/rc/biorepository/ac37-8898" />
+     <dsw:hasDerivative rdf:resource="http://www.ncbi.nlm.nih.gov/gene/2690040" />
+     <dcterms:hasPart rdf:resource="http://arctos.database.museum/guid/UAM:Inv:5497" />
+     <dsw:hasOccurrence rdf:resource="http://arctos.database.museum/guid/UAM:Inv:5497#occ" />
+</rdf:Description>
+<rdf:Description rdf:about="http://arctos.database.museum/guid/UAM:Inv:5497">
+     <ac:metadataLanguage>en</ac:metadataLanguage>
+     <dcterms:description>Preserved specimen http://arctos.database.museum/guid/UAM:Inv:5497</dcterms:description>
+     <rdf:type rdf:resource ="http://rs.tdwg.org/dwc/dwctype/PreservedSpecimen" />
+     <dcterms:type rdf:resource ="http://purl.org/dc/dcmitype/PhysicalObject" />
+     <dc:creator>University of Alaska Museum of the North</dc:creator>
+     <foaf:maker rdf:resource="http://biocol.org/urn:lsid:biocol.org:col:34847"/>
+     <dcterms:created>2013-03-27</dcterms:created>
+     <dwc:preparations>whole animal (ETOH)</dwc:preparations>
+     <dsw:collectionURI rdf:resource ="http://biocol.org/urn:lsid:biocol.org:col:34847" />
+     <dsw:derivedFrom rdf:resource="http://arctos.database.museum/guid/UAM:Inv:5497#ind" />
+     <dcterms:isPartOf rdf:resource="http://arctos.database.museum/guid/UAM:Inv:5497#ind" />
+     <dsw:hasDerivative rdf:resource="http://www.mnh.si.edu/rc/biorepository/ac37-8898" />
+     <dsw:hasDerivative rdf:resource="http://www.ncbi.nlm.nih.gov/gene/2690040" />
+     <dcterms:hasPart rdf:resource="http://www.mnh.si.edu/rc/biorepository/ac37-8898" />
+     <dsw:evidenceFor rdf:resource="http://arctos.database.museum/guid/UAM:Inv:5497#occ" />
+</rdf:Description>
+<rdf:Description rdf:about="http://www.mnh.si.edu/rc/biorepository/ac37-8898">
+     <ac:metadataLanguage>en</ac:metadataLanguage>
+     <dcterms:description>tissue sample of tube feet</dcterms:description>
+     <rdf:type rdf:resource ="http://rs.tdwg.org/dwc/dwctype/MaterialSample" />
+     <dcterms:type rdf:resource ="http://purl.org/dc/dcmitype/PhysicalObject" />
+     <dc:creator>NMNH Biorepository</dc:creator>
+     <foaf:maker rdf:resource="http://www.mnh.si.edu/rc/void"/>
+     <dcterms:created>2017-02-17</dcterms:created>
+     <dsw:collectionURI rdf:resource ="http://www.mnh.si.edu/rc/biorepository/void" />
+     <dsw:derivedFrom rdf:resource="http://arctos.database.museum/guid/UAM:Inv:5497#ind" />
+     <dsw:derivedFrom rdf:resource="http://arctos.database.museum/guid/UAM:Inv:5497" />
+     <dcterms:isPartOf rdf:resource="http://arctos.database.museum/guid/UAM:Inv:5497" />
+     <dsw:hasDerivative rdf:resource="http://www.ncbi.nlm.nih.gov/gene/2690040" />
+</rdf:Description>
+<rdf:Description rdf:about="http://www.ncbi.nlm.nih.gov/gene/2690040">
+     <ac:metadataLanguage>en</ac:metadataLanguage>
+     <dcterms:description>32S rRNA sequence</dcterms:description>
+     <rdf:type rdf:resource ="http://rs.tdwg.org/dwc/dwctype/DNASequence" />
+     <dc:creator>NMNH Biorepository</dc:creator>
+     <foaf:maker rdf:resource="http://www.mnh.si.edu/rc/void"/>
+     <dcterms:created>2017-04-07</dcterms:created>
+     <dsw:collectionURI rdf:resource ="http://www.ncbi.nlm.nih.gov/gene/void" />
+     <dsw:derivedFrom rdf:resource="http://arctos.database.museum/guid/UAM:Inv:5497#ind" />
+     <dsw:derivedFrom rdf:resource="http://arctos.database.museum/guid/UAM:Inv:5497" />
+     <dsw:derivedFrom rdf:resource="http://www.mnh.si.edu/rc/biorepository/ac37-8898" />
+</rdf:Description>
+<rdf:Description rdf:about="http://arctos.database.museum/guid/UAM:Inv:5497#occ">
+     <rdf:type rdf:resource ="http://rs.tdwg.org/dwc/dwctype/Occurrence" />
+     <dwc:recordedBy>John Deck</dwc:recordedBy>
+     <dwc:recordNumber>1</dwc:recordNumber>
+     <dwc:occurrenceRemarks>On eelgrass in intertidal zone.</dwc:occurrenceRemarks>
+     <dsw:atEvent>
+         <rdf:Description rdf:about="http://arctos.database.museum/guid/UAM:Inv:5497#eve">
+             <dwc:eventDate>2013-03-27</dwc:eventDate>
+             <rdf:type rdf:resource ="http://purl.org/dc/dcmitype/Event" />
+             <dsw:eventOf rdf:resource="http://arctos.database.museum/guid/UAM:Inv:5497#occ" />
+             <dsw:locatedAt>
+                 <rdf:Description rdf:about="http://arctos.database.museum/guid/UAM:Inv:5497#loc">
+                     <rdf:type rdf:resource ="http://purl.org/dc/terms/Location" />
+                     <dsw:locates rdf:resource="http://arctos.database.museum/guid/UAM:Inv:5497#eve" />
+                     <geo:lat>47.653276</geo:lat>
+                     <geo:long>-122.420318</geo:long>
+                     <geo:alt>0</geo:alt>
+                     <dwc:coordinateUncertaintyInMeters>25</dwc:coordinateUncertaintyInMeters>
+                     <dwc:georeferenceRemarks>Location determined by examination of Google Maps.</dwc:georeferenceRemarks>
+                     <dwc:continent>NA</dwc:continent>
+                     <dwc:countryCode>US</dwc:countryCode>
+                     <dwc:stateProvince>Washington</dwc:stateProvince>
+                     <dwc:county>King</dwc:county>
+                     <dwc:locality>west of deadend of Perkins Lane W.</dwc:locality>
+                 </rdf:Description>
+             </dsw:locatedAt>
+         </rdf:Description>
+     </dsw:atEvent>
+     <dsw:occurrenceOf rdf:resource="http://arctos.database.museum/guid/UAM:Inv:5497#ind" />
+     <dsw:hasEvidence rdf:resource="http://arctos.database.museum/guid/UAM:Inv:5497" />
+</rdf:Description>
+
+<rdf:Description rdf:about="http://arctos.database.museum/guid/UAM:Inv:5498#ind">
+     <ac:metadataLanguage>en</ac:metadataLanguage>
+     <dcterms:description>Individual organism http://arctos.database.museum/guid/UAM:Inv:5498#ind</dcterms:description>
+     <rdf:type rdf:resource ="http://purl.org/dsw/IndividualOrganism" />
+     <dcterms:type rdf:resource ="http://purl.org/dc/dcmitype/PhysicalObject" />
+     <dsw:hasIdentification>
+          <rdf:Description rdf:about="http://arctos.database.museum/guid/UAM:Inv:5498#2013-03-28walls">
+               <rdf:type rdf:resource ="http://rs.tdwg.org/dwc/dwctype/Identification" />
+               <dwc:identifiedBy>Ramona Walls</dwc:identifiedBy>
+               <dwc:dateIdentified>2013-03-28</dwc:dateIdentified>
+               <dsw:identifies rdf:resource ="http://arctos.database.museum/guid/UAM:Inv:5498#ind" />
+               <dsw:idBasedOn rdf:resource="http://arctos.database.museum/guid/UAM:Inv:5498"/>
+               <dsw:toTaxon>
+                    <tc:TaxonConcept>
+                         <tc:hasName>
+                             <tn:TaxonName>
+                                  <dcterms:title>Nutricola tantilla (Gould 1853)</dcterms:title>
+                                  <tn:genusPart>Nutricola</tn:genusPart>
+                                  <tn:specificEpithet>tantilla</tn:specificEpithet>
+                                  <tn:authorship>Gould</tn:authorship>
+                                  <tn:year>1853</tn:year>
+                                  <tn:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/>
+                             </tn:TaxonName>
+                        </tc:hasName>
+                   </tc:TaxonConcept>
+               </dsw:toTaxon>
+          </rdf:Description>
+     </dsw:hasIdentification>
+     <dsw:hasDerivative rdf:resource="http://arctos.database.museum/guid/UAM:Inv:5498" />
+     <dcterms:hasPart rdf:resource="http://arctos.database.museum/guid/UAM:Inv:5498" />
+     <dsw:hasOccurrence rdf:resource="http://arctos.database.museum/guid/UAM:Inv:5498#occ" />
+</rdf:Description>
+<rdf:Description rdf:about="http://arctos.database.museum/guid/UAM:Inv:5498">
+     <ac:metadataLanguage>en</ac:metadataLanguage>
+     <dcterms:description>Preserved specimen http://arctos.database.museum/guid/UAM:Inv:5498</dcterms:description>
+     <rdf:type rdf:resource ="http://rs.tdwg.org/dwc/dwctype/PreservedSpecimen" />
+     <dcterms:type rdf:resource ="http://purl.org/dc/dcmitype/PhysicalObject" />
+     <dc:creator>University of Alaska Museum of the North</dc:creator>
+     <foaf:maker rdf:resource="http://biocol.org/urn:lsid:biocol.org:col:34847"/>
+     <dcterms:created>2013-03-28</dcterms:created>
+     <dwc:preparations>shell</dwc:preparations>
+     <dsw:collectionURI rdf:resource ="http://biocol.org/urn:lsid:biocol.org:col:34847" />
+     <dsw:derivedFrom rdf:resource="http://arctos.database.museum/guid/UAM:Inv:5498#ind" />
+     <dcterms:isPartOf rdf:resource="http://arctos.database.museum/guid/UAM:Inv:5498#ind" />
+     <dsw:evidenceFor rdf:resource="http://arctos.database.museum/guid/UAM:Inv:5498#occ" />
+</rdf:Description>
+<rdf:Description rdf:about="http://arctos.database.museum/guid/UAM:Inv:5498#occ">
+     <rdf:type rdf:resource ="http://rs.tdwg.org/dwc/dwctype/Occurrence" />
+     <dwc:recordedBy>Ramona Walls</dwc:recordedBy>
+     <dwc:recordNumber>354</dwc:recordNumber>
+     <dwc:occurrenceRemarks>Half of shell found in sand.</dwc:occurrenceRemarks>
+     <dsw:atEvent>
+         <rdf:Description rdf:about="http://arctos.database.museum/guid/UAM:Inv:5498#eve">
+             <dwc:eventDate>2013-03-28</dwc:eventDate>
+             <rdf:type rdf:resource ="http://purl.org/dc/dcmitype/Event" />
+             <dsw:eventOf rdf:resource="http://arctos.database.museum/guid/UAM:Inv:5498#occ" />
+             <dsw:locatedAt>
+                 <rdf:Description rdf:about="http://arctos.database.museum/guid/UAM:Inv:5498#loc">
+                     <rdf:type rdf:resource ="http://purl.org/dc/terms/Location" />
+                     <dsw:locates rdf:resource="http://arctos.database.museum/guid/UAM:Inv:5498#eve" />
+                     <geo:lat>47.662613</geo:lat>
+                     <geo:long>-122.432678</geo:long>
+                     <geo:alt>0</geo:alt>
+                     <dwc:coordinateUncertaintyInMeters>10</dwc:coordinateUncertaintyInMeters>
+                     <dwc:georeferenceRemarks>Location determined by handheld GPS receiver.</dwc:georeferenceRemarks>
+                     <dwc:continent>NA</dwc:continent>
+                     <dwc:countryCode>US</dwc:countryCode>
+                     <dwc:stateProvince>Washington</dwc:stateProvince>
+                     <dwc:county>King</dwc:county>
+                     <dwc:locality>On beach near West Point Lighthouse</dwc:locality>
+                 </rdf:Description>
+             </dsw:locatedAt>
+         </rdf:Description>
+     </dsw:atEvent>
+     <dsw:occurrenceOf rdf:resource="http://arctos.database.museum/guid/UAM:Inv:5498#ind" />
+     <dsw:hasEvidence rdf:resource="http://arctos.database.museum/guid/UAM:Inv:5498" />
+</rdf:Description>
+
+<!--
+Information about the metadata document itself
+-->
+<rdf:Description rdf:about="http://arctos.database.museum/guid/metadata.rdf">
+     <dcterms:description>RDF formatted descriptions</dcterms:description>
+     <rdf:type rdf:resource ="http://xmlns.com/foaf/0.1/Document" />
+     <dc:creator>Arctos Museum Database</dc:creator>
+     <dc:language>en</dc:language>
+     <dcterms:modified>2013-03-29T01:07:19</dcterms:modified>
+     <dcterms:references rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465"/>
+     <dcterms:references rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465#occ"/>
+     <dcterms:references rdf:resource="http://arctos.database.museum/guid/MVZ:Bird:21465#ind"/>
+     <dcterms:references rdf:resource="http://arctos.database.museum/guid/UAM:Inv:5497"/>
+     <dcterms:references rdf:resource="http://arctos.database.museum/guid/UAM:Inv:5497#occ"/>
+     <dcterms:references rdf:resource="http://arctos.database.museum/guid/UAM:Inv:5497#ind"/>
+     <dcterms:references rdf:resource="http://arctos.database.museum/guid/UAM:Inv:5498"/>
+     <dcterms:references rdf:resource="http://arctos.database.museum/guid/UAM:Inv:5498#occ"/>
+     <dcterms:references rdf:resource="http://arctos.database.museum/guid/UAM:Inv:5498#ind"/>
+</rdf:Description>
+</rdf:RDF>
