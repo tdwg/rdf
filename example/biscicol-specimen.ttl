@@ -39,7 +39,7 @@
 	dwc:sex "female";
 	dwcuri:inCollection <http://biocol.org/urn:lsid:biocol.org:col:34777>;
 	dwcuri:recordedBy <http://viaf.org/viaf/263074474>;
-	bsc:depends_on <http://nt2.net/ark:/21547/Et2>;
+	bsc:depends_on <http://n2t.net/ark:/21547/Et2>;
 	a 	dwctype:Occurrence,
 		dwctype:PreservedSpecimen.
 		
@@ -68,12 +68,12 @@
 		<http://zoobank.org/306F5618-D154-47D5-81BB-697CB2A83EE7>;
 	a dwctype:Identification.
 	
-<http://nt2.net/ark:/21547/Et2> 
+<http://n2t.net/ark:/21547/Et2> 
 	dwc:eventDate "1983-11-16";
-	bsc:related_to <http://nt2.net/ark:/21547/c2>;
+	bsc:related_to <http://n2t.net/ark:/21547/c2>;
 	a dcmitype:Event.
                                 
-<http://nt2.net/ark:/21547/c2> 
+<http://n2t.net/ark:/21547/c2> 
 	dwc:continent "South America";
 	dwc:coordinateUncertaintyInMeters "30"^^xsd:int;
 	dwc:country "Argentina";
@@ -102,7 +102,7 @@
 	dcterms:references 
 		<http://arctos.database.museum/guid/MVZ:Mamm:165861>,
 		<http://arctos.database.museum/guid/MVZ:Mamm:165861#1999-01-27pearson>,
-		<http://nt2.net/ark:/21547/Et2>,
-		<http://nt2.net/ark:/21547/c2>;
+		<http://n2t.net/ark:/21547/Et2>,
+		<http://n2t.net/ark:/21547/c2>;
 	a foaf:Document.
 	

@@ -47,7 +47,7 @@ xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
      <dwc:recordedBy>Oliver P. Pearson</dwc:recordedBy>
      <dwcuri:recordedBy rdf:resource ="http://viaf.org/viaf/263074474" />
      <dwc:recordNumber>7101</dwc:recordNumber>
-     <bsc:depends_on rdf:resource="http://nt2.net/ark:/21547/Et2" />
+     <bsc:depends_on rdf:resource="http://n2t.net/ark:/21547/Et2" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://arctos.database.museum/guid/MVZ:Mamm:165861#1999-01-27pearson">
@@ -74,13 +74,13 @@ xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
     <bsc:depends_on rdf:resource="http://arctos.database.museum/guid/MVZ:Mamm:165861"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://nt2.net/ark:/21547/Et2">
+<rdf:Description rdf:about="http://n2t.net/ark:/21547/Et2">
      <dwc:eventDate>1983-11-16</dwc:eventDate>
      <rdf:type rdf:resource ="http://purl.org/dc/dcmitype/Event" />
-     <bsc:related_to rdf:resource="http://nt2.net/ark:/21547/c2" />
+     <bsc:related_to rdf:resource="http://n2t.net/ark:/21547/c2" />
 </rdf:Description>
 
-<rdf:Description rdf:about="http://nt2.net/ark:/21547/c2">
+<rdf:Description rdf:about="http://n2t.net/ark:/21547/c2">
      <rdf:type rdf:resource ="http://purl.org/dc/terms/Location" />
      <dwc:decimalLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-40.9684722</dwc:decimalLatitude>
      <dwc:decimalLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-71.1918056</dwc:decimalLongitude>
@@ -112,8 +112,8 @@ Information about the metadata document itself
      <dcterms:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng" />
      <dcterms:modified rdf:datatype ="http://www.w3.org/2001/XMLSchema#dateTime">2013-06-27T10:26:34</dcterms:modified>
      <dcterms:references rdf:resource="http://arctos.database.museum/guid/MVZ:Mamm:165861"/>
-     <dcterms:references rdf:resource="http://nt2.net/ark:/21547/Et2"/>
-     <dcterms:references rdf:resource="http://nt2.net/ark:/21547/c2"/>
+     <dcterms:references rdf:resource="http://n2t.net/ark:/21547/Et2"/>
+     <dcterms:references rdf:resource="http://n2t.net/ark:/21547/c2"/>
      <dcterms:references rdf:resource="http://arctos.database.museum/guid/MVZ:Mamm:165861#1999-01-27pearson"/>
 </rdf:Description>
 </rdf:RDF>
