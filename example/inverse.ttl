@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3/org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix local: <http://bioimages.vanderbilt.edu/rdf/local#>.
+@prefix ns0: <http://www.w3.org/2000/01/rdf-schema#>.
+
+local:hasChild rdfs:label "child relationship";
+               a owl:ObjectProperty;
+               owl:inverseOf local:hasParent.
+local:hasParent rdfs:label "parent relationship";
+                a owl:ObjectProperty;
+                owl:inverseOf local:hasChild.
+<http://fake.org/carmen> local:hasParent <http://fake.org/carol>;
+                         rdfs:label "Carmen".
+<http://fake.org/carol> local:hasChild <http://fake.org/carmen>,
+                                       <http://fake.org/jessie>;
+                        rdfs:label "Carol".
+<http://fake.org/jessie> local:hasParent <http://fake.org/steve>;
+                         rdfs:label "Jessie".
+<http://fake.org/steve> local:hasChild <http://fake.org/carmen>;
+                        rdfs:label "Steve".
