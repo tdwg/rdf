@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:rdfs="http://www.w3/org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:local="http://bioimages.vanderbilt.edu/rdf/local#"
+>
+
+	<owl:ObjectProperty rdf:about="http://bioimages.vanderbilt.edu/rdf/local#hasParent">
+		<rdfs:label>parent relationship</rdfs:label>
+	 	<owl:inverseOf rdf:resource="http://bioimages.vanderbilt.edu/rdf/local#hasChild"/>
+	</owl:ObjectProperty>
+
+	<owl:ObjectProperty rdf:about="http://bioimages.vanderbilt.edu/rdf/local#hasChild">
+		<rdfs:label>child relationship</rdfs:label>
+	 	<owl:inverseOf rdf:resource="http://bioimages.vanderbilt.edu/rdf/local#hasParent"/>
+	</owl:ObjectProperty>
+
+	<rdf:Description rdf:about="http://fake.org/steve">
+		<rdfs:label>Steve</rdfs:label>
+		<local:hasChild rdf:resource="http://fake.org/carmen"/>		
+	</rdf:Description>
+	
+	<rdf:Description rdf:about="http://fake.org/carol">
+		<rdfs:label>Carol</rdfs:label>
+		<local:hasChild rdf:resource="http://fake.org/jessie"/>
+	</rdf:Description>
+	
+	<rdf:Description rdf:about="http://fake.org/carmen">
+		<rdfs:label>Carmen</rdfs:label>
+		<local:hasParent>
+			<rdf:Description rdf:about="http://fake.org/carol">
+			      <local:hasChild rdf:resource="http://fake.org/carmen"/>
+			</rdf:Description>
+		</local:hasParent>
+	</rdf:Description>
+	
+	<rdf:Description rdf:about="http://fake.org/jessie">
+		<rdfs:label>Jessie</rdfs:label>
+		<local:hasParent rdf:resource="http://fake.org/steve"/>
+	</rdf:Description>
+	
+</rdf:RDF>
