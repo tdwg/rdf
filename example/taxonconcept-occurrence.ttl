@@ -3,8 +3,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix dwc: <http://rs.tdwg.org/dwc/terms/>.
-@prefix dwctype: <http://rs.tdwg.org/dwc/dwctype/>.
-@prefix dwcuri: <http://rs.tdwg.org/dwc/uri/>.
+@prefix dwciri: <http://rs.tdwg.org/dwc/iri/>.
 @prefix dcterms: <http://purl.org/dc/terms/>.
 @prefix dc: <http://purl.org/dc/elements/1.1/>.
 @prefix dcmitype: <http://purl.org/dc/dcmitype/>.
@@ -27,8 +26,8 @@
         dwc:country "Argentina";
         dwc:countryCode "AR";
         dwc:county "Los Lagos";
-        dwc:decimalLatitude -40.9684722;
-        dwc:decimalLongitude -71.1918056;
+        dwc:decimalLatitude "-40.9684722"^^xsd:decimal;
+        dwc:decimalLongitude "-71.1918056"^^xsd:decimal;
         dwc:geodeticDatum "EPSG:4326";
         dwc:georeferenceProtocol "MaNIS georeferencing guidelines";
         dwc:georeferenceSources "Google Earth (assumed v.6)";
@@ -38,20 +37,20 @@
         dwc:minimumElevationInMeters "1075"^^xsd:int;
         dwc:stateProvince "Neuquen";
         dwc:verbatimLocality "Estancia Fortin Chacabuco, 3 km S and 2 km W Co. Puntudo";
-        dwcuri:inDescribedPlace <http://sws.geonames.org/3846077/>;
+        dwciri:inDescribedPlace <http://sws.geonames.org/3846077/>;
         a       txn:Area,
         dcterms:Location;
         owl:sameAs <http://www.w3.org/2003/01/geo/wgs84_pos#-40.9684722,-71.1918056;u=30>;
-        geo:alt "1075";
-        geo:lat "-40.9684722";
-        geo:long "-71.1918056".
+        geo:alt "1075"^^xsd:int;
+        geo:lat "-40.9684722"^^xsd:decimal;
+        geo:long "-71.1918056"^^xsd:decimal.
         
 <http://arctos.database.museum/guid/MVZ:Mamm:165861#Identification_0001> 
         txn:identificationHasOccurrence <http://arctos.database.museum/guid/MVZ:Mamm:165861#Occurrence>;
         txn:identificationHasSpeciesConcept <http://lod.taxonconcept.org/ses/3tYE7#Species>;
         txn:identificationOfIndividual <http://arctos.database.museum/guid/MVZ:Mamm:165861#Individual>;
         dwc:class "Mammalia";
-        dwc:dateIdentified "1999-01-27";
+        dwc:dateIdentified "1999-01-27"^^xsd:date;
         dwc:family "Ctenomyidae";
         dwc:genus "Ctenomys";
         dwc:identificationRemarks "ID from citation in Pearson 1985."@en;
@@ -67,10 +66,10 @@
         dwc:vernacularName 
                 "colonial tuco-tuco"@en,
                 "tuco-tuco colonial"@es;
-        dwcuri:identifiedBy <http://viaf.org/viaf/263074474>;
-        dwcuri:toTaxonConcept <http://lod.taxonconcept.org/ses/3tYE7#Species>;
+        dwciri:identifiedBy <http://viaf.org/viaf/263074474>;
+        dwciri:toTaxon <http://lod.taxonconcept.org/ses/3tYE7#Species>;
         a       txn:Identification,
-                dwctype:Identification.
+                dwc:Identification.
                 
 <http://arctos.database.museum/guid/MVZ:Mamm:165861#Individual> 
         txn:individualHasCurrentIdentificationAssertion <http://arctos.database.museum/guid/MVZ:Mamm:165861#Identification_0001>;
@@ -81,13 +80,13 @@
         a       txn:SpeciesIndividual.
         
 <http://arctos.database.museum/guid/MVZ:Mamm:165861#Occurrence> 
-        txn:endDate "1983-11-16";
+        txn:endDate "1983-11-16"^^xsd:date;
         txn:occurrenceHasArea <http://arctos.database.museum/guid/MVZ:Mamm:165861#Area>;
         txn:occurrenceHasIndividual <http://arctos.database.museum/guid/MVZ:Mamm:165861#Individual>;
         txn:occurrenceHasSpeciesConcept <http://lod.taxonconcept.org/ses/3tYE7#Species>;
-        txn:startDate "1983-11-16";
+        txn:startDate "1983-11-16"^^xsd:date;
         dc:creator "University of California Berkeley Museum of Vertebrate Zoology";
-        dcterms:created "1983-11-16";
+        dcterms:created "1983-11-16"^^xsd:date;
         dcterms:creator <http://biocol.org/urn:lsid:biocol.org:col:34777>;
         dcterms:description "Preserved specimen http://arctos.database.museum/guid/MVZ:Mamm:165861"@en;
         dcterms:identifier 
@@ -97,18 +96,18 @@
         dwc:basisOfRecord "PreservedSpecimen";
         dwc:catalogNumber "165861";
         dwc:collectionCode "Mamm";
-        dwc:eventDate "1983-11-16";
+        dwc:eventDate "1983-11-16"^^xsd:date;
         dwc:institutionCode "MVZ";
         dwc:otherCatalogNumbers "12272";
         dwc:preparations "skin; skull; skeleton";
         dwc:recordNumber "7101";
         dwc:recordedBy "Oliver P. Pearson";
         dwc:sex "female";
-        dwcuri:inCollection <http://biocol.org/urn:lsid:biocol.org:col:34777>;
-        dwcuri:recordedBy <http://viaf.org/viaf/263074474>;
+        dwciri:inCollection <http://biocol.org/urn:lsid:biocol.org:col:34777>;
+        dwciri:recordedBy <http://viaf.org/viaf/263074474>;
         a       txn:Occurrence,
-                dwctype:Occurrence,
-                dwctype:PreservedSpecimen.
+                dwc:Occurrence,
+                dwc:PreservedSpecimen.
                 
 <http://arctos.database.museum/guid/MVZ:Mamm:165861.rdf> 
         dc:creator "Arctos Museum Database";

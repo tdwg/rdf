@@ -7,8 +7,7 @@ xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
 xmlns:owl="http://www.w3.org/2002/07/owl#"
 xmlns:dwc="http://rs.tdwg.org/dwc/terms/"
-xmlns:dwctype="http://rs.tdwg.org/dwc/dwctype/"
-xmlns:dwcuri="http://rs.tdwg.org/dwc/uri/"
+xmlns:dwciri="http://rs.tdwg.org/dwc/iri/"
 xmlns:dcterms="http://purl.org/dc/terms/"
 xmlns:dc="http://purl.org/dc/elements/1.1/"
 xmlns:dcmitype="http://purl.org/dc/dcmitype/"
@@ -19,22 +18,22 @@ xmlns:xmpRights="http://ns.adobe.com/xap/1.0/rights/"
 xmlns:dsw="http://purl.org/dsw/"
 xmlns:mix="http://www.loc.gov/mix/v20"
 xmlns:bibo="http://purl.org/ontology/bibo/"
-xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
 >
 <rdf:Description rdf:about="http://arctos.database.museum/guid/MVZ:Mamm:165861#ind">
-     <rdf:type rdf:resource ="http://purl.org/dsw/IndividualOrganism" />
+     <rdf:type rdf:resource ="http://rs.tdwg.org/dwc/terms/Organism" />
+     <dwc:organismScope>multicellular organism</dwc:organismScope>
      <dcterms:type rdf:resource ="http://purl.org/dc/dcmitype/PhysicalObject" />
-     <dcterms:description xml:lang="en">Individual organism http://arctos.database.museum/guid/MVZ:Mamm:165861#ind</dcterms:description>
+     <dcterms:description xml:lang="en">Organism http://arctos.database.museum/guid/MVZ:Mamm:165861#ind</dcterms:description>
      <dsw:hasIdentification rdf:resource ="http://arctos.database.museum/guid/MVZ:Mamm:165861#1999-01-27pearson" />
      <dsw:hasOccurrence rdf:resource="http://arctos.database.museum/guid/MVZ:Mamm:165861#occ" />
      <dsw:hasDerivative rdf:resource="http://arctos.database.museum/guid/MVZ:Mamm:165861" />
 </rdf:Description>
 
 <rdf:Description rdf:about="http://arctos.database.museum/guid/MVZ:Mamm:165861#1999-01-27pearson">
-    <rdf:type rdf:resource ="http://rs.tdwg.org/dwc/dwctype/Identification" />
+    <rdf:type rdf:resource ="http://rs.tdwg.org/dwc/terms/Identification" />
     <dwc:identifiedBy>Oliver P. Pearson</dwc:identifiedBy>
-    <dwcuri:identifiedBy rdf:resource ="http://viaf.org/viaf/263074474" />
-    <dwc:dateIdentified>1999-01-27</dwc:dateIdentified>
+    <dwciri:identifiedBy rdf:resource ="http://viaf.org/viaf/263074474" />
+    <dwc:dateIdentified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-01-27</dwc:dateIdentified>
     <dwc:scientificName>Ctenomys sociabilis Pearson and Christie, 1985</dwc:scientificName>
     <dwc:vernacularName xml:lang="en">colonial tuco-tuco</dwc:vernacularName>
     <dwc:vernacularName xml:lang="es">tuco-tuco colonial</dwc:vernacularName>
@@ -49,26 +48,26 @@ xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
     <dwc:taxonRank>species</dwc:taxonRank>
     <dwc:nameAccordingTo>Oliver P. Pearson. 1985. Los tuco-tucos (genera Ctenomys) de los Parques Nacionales Lanin y Nahuel Huapi, Argentina. Historia Natural 5(37):337-343.</dwc:nameAccordingTo>
     <dwc:identificationRemarks xml:lang="en">ID from citation in Pearson 1985.</dwc:identificationRemarks>
-    <dwcuri:toTaxonConcept rdf:resource="http://zoobank.org/306F5618-D154-47D5-81BB-697CB2A83EE7"/>
+    <dwciri:toTaxon rdf:resource="http://zoobank.org/306F5618-D154-47D5-81BB-697CB2A83EE7"/>
     <dsw:identifies rdf:resource ="http://arctos.database.museum/guid/MVZ:Mamm:165861#ind" />
     <dsw:idBasedOn rdf:resource="http://arctos.database.museum/guid/MVZ:Mamm:165861"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://arctos.database.museum/guid/MVZ:Mamm:165861">
-     <rdf:type rdf:resource ="http://rs.tdwg.org/dwc/dwctype/PreservedSpecimen" />
+     <rdf:type rdf:resource ="http://rs.tdwg.org/dwc/terms/PreservedSpecimen" />
      <dcterms:type rdf:resource ="http://purl.org/dc/dcmitype/PhysicalObject" />
      <dcterms:description xml:lang="en">Preserved specimen http://arctos.database.museum/guid/MVZ:Mamm:165861</dcterms:description>
      <dwc:basisOfRecord>PreservedSpecimen</dwc:basisOfRecord>
      <dc:creator>University of California Berkeley Museum of Vertebrate Zoology</dc:creator>
      <dcterms:creator rdf:resource="http://biocol.org/urn:lsid:biocol.org:col:34777" />
-     <dcterms:created>1983-11-16</dcterms:created>
+     <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1983-11-16</dcterms:created>
      <dwc:institutionCode>MVZ</dwc:institutionCode>
      <dwc:collectionCode>Mamm</dwc:collectionCode>
      <dwc:catalogNumber>165861</dwc:catalogNumber>
      <dwc:otherCatalogNumbers>12272</dwc:otherCatalogNumbers>
      <dcterms:identifier>MVZ:Mamm:165861</dcterms:identifier>
      <dcterms:identifier>http://arctos.database.museum/guid/MVZ:Mamm:165861</dcterms:identifier>     
-     <dwcuri:inCollection rdf:resource ="http://biocol.org/urn:lsid:biocol.org:col:34777" />
+     <dwciri:inCollection rdf:resource ="http://biocol.org/urn:lsid:biocol.org:col:34777" />
      <dwc:preparations>skin; skull; skeleton</dwc:preparations>
      <dwc:sex>female</dwc:sex>
      <dsw:derivedFrom rdf:resource="http://arctos.database.museum/guid/MVZ:Mamm:165861#ind" />
@@ -77,9 +76,9 @@ xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
 </rdf:Description>
 
 <rdf:Description rdf:about="http://arctos.database.museum/guid/MVZ:Mamm:165861#occ">
-     <rdf:type rdf:resource ="http://rs.tdwg.org/dwc/dwctype/Occurrence" />
+     <rdf:type rdf:resource ="http://rs.tdwg.org/dwc/terms/Occurrence" />
      <dwc:recordedBy>Oliver P. Pearson</dwc:recordedBy>
-     <dwcuri:recordedBy rdf:resource ="http://viaf.org/viaf/263074474" />
+     <dwciri:recordedBy rdf:resource ="http://viaf.org/viaf/263074474" />
      <dwc:recordNumber>7101</dwc:recordNumber>
      <dsw:atEvent rdf:resource="http://arctos.database.museum/guid/MVZ:Mamm:165861#eve" />
      <dsw:occurrenceOf rdf:resource="http://arctos.database.museum/guid/MVZ:Mamm:165861#ind" />
@@ -87,7 +86,7 @@ xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
 </rdf:Description>
 
 <rdf:Description rdf:about="http://arctos.database.museum/guid/MVZ:Mamm:165861#eve">
-     <dwc:eventDate>1983-11-16</dwc:eventDate>
+     <dwc:eventDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1983-11-16</dwc:eventDate>
      <rdf:type rdf:resource ="http://purl.org/dc/dcmitype/Event" />
      <dsw:eventOf rdf:resource="http://arctos.database.museum/guid/MVZ:Mamm:165861#occ" />
      <dsw:locatedAt rdf:resource="http://arctos.database.museum/guid/MVZ:Mamm:165861#loc" />
@@ -111,7 +110,7 @@ xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
      <dwc:locationRemarks xml:lang="en">The colony was just N of the fence and just E of the stream according to Michael Christie, who verified on Google Earth (about 40. 58' 06 to 07" and 71. 11' 30 to 31")</dwc:locationRemarks>
      <dwc:georeferenceSources>Google Earth (assumed v.6)</dwc:georeferenceSources>
      <dwc:georeferenceProtocol>MaNIS georeferencing guidelines</dwc:georeferenceProtocol>
-     <dwcuri:inDescribedPlace rdf:resource="http://sws.geonames.org/3846077/"/>
+     <dwciri:inDescribedPlace rdf:resource="http://sws.geonames.org/3846077/"/>
      <dsw:locates rdf:resource="http://arctos.database.museum/guid/MVZ:Mamm:165861#eve" />
 </rdf:Description>
 
