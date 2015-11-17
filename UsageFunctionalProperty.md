@@ -1,0 +1,1 @@
+# placeholder page for notes on appropriate use of owl:FunctionalProperty and owl:InverseFunctionalProperty #
