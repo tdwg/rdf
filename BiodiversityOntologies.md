@@ -1,4 +1,4 @@
-![http://tdwg-rdf.googlecode.com/svn/trunk/file/tdwg-logo.png](http://tdwg-rdf.googlecode.com/svn/trunk/file/tdwg-logo.png)  [http://www.tdwg.org](http://www.tdwg.org/)
+![file/tdwg-logo.png](file/tdwg-logo.png)  [http://www.tdwg.org](http://www.tdwg.org/)
 
 # Summary of some ontologies/data models which provide object properties that can connect instances of biodiversity-related classes #
 
@@ -8,7 +8,7 @@
 
 **Permanent URL:** http://code.google.com/p/tdwg-rdf/wiki/BiodiversityOntologies
 
-**TDWG Task Group:** [TDWG RDF/OWL Task Group](http://code.google.com/p/tdwg-rdf/)
+**TDWG Task Group:** [TDWG RDF/OWL Task Group](https://github.com/tdwg/rdf)
 
 **Contributors:** [Steve Baskauf](mailto:steve.baskauf@vanderbilt.edu?subject=BiodiversityOntologies) (TDWG RDF/OWL Task Group)
 
@@ -27,7 +27,7 @@ Biodiversity Information Standards (TDWG) is a standards organization which adop
 
 ## 1.1 Similarities among the four ontologies/data models ##
 
-Each of the three vocabularies described in this document calls itself an "ontology" (see [The Beginners Guide to RDF](http://code.google.com/p/tdwg-rdf/wiki/Beginners4Vocabularies#4.2._What_is_an_ontology?) for a discussion of the definition of "ontology").  Each of the ontologies uses Web Ontology Language (OWL) to describe the properties of the terms.  Some term descriptions include domain, range, and subproperty declarations and properties are declared to be object or datatype properties.  However, there are few formal constraints to class membership - the ontologies do not make use of OWL restrictions.
+Each of the three vocabularies described in this document calls itself an "ontology" (see [The Beginners Guide to RDF](Beginners4Vocabularies.md) for a discussion of the definition of "ontology").  Each of the ontologies uses Web Ontology Language (OWL) to describe the properties of the terms.  Some term descriptions include domain, range, and subproperty declarations and properties are declared to be object or datatype properties.  However, there are few formal constraints to class membership - the ontologies do not make use of OWL restrictions.
 
 Note on 2013-07-01: a fourth data model (the BiSciCol model) has been added.  The URIs for the bsc: namespace (http://biscicol.org/terms/index.html# ) object properties are defined at http://biscicol.org/terms/index.html although they don't dereference to produce RDF/XML at this time.
 
@@ -37,7 +37,7 @@ In the diagrams, ovals are used to represent instances of the classes whose URIs
 
 ## 1.3 Subclass relationships and object properties ##
 
-The tables which list subclass relationships and object properties were created manually by examining the ontologies using [SWOOP](http://code.google.com/p/swoop/) and example resources which use the ontologies (notably http://ocs.taxonconcept.org/ocs/f522444a-2dd9-400e-be59-47213ef38cb9.rdf for the TaxonConcept ontology).
+The tables which list subclass relationships and object properties were created manually by examining the ontologies using [SWOOP](https://github.com/ronwalf/swoop) and example resources which use the ontologies (notably http://ocs.taxonconcept.org/ocs/f522444a-2dd9-400e-be59-47213ef38cb9.rdf for the TaxonConcept ontology).
 
 # 2 The TDWG Ontology #
 
@@ -45,7 +45,7 @@ The tables which list subclass relationships and object properties were created 
 
 When TDWG made the deployment of Life Science Identifiers (LSIDs) a priority, the development of vocabularies described by RDF (Resource Description Framework; see http://code.google.com/p/tdwg-rdf/wiki/Beginners) was intended to progress in tandem with LSID adoption (see http://wiki.tdwg.org/twiki/bin/view/TAG/LsidVocs ).  These RDF vocabularies (written using a form of RDF called Web Ontology Language or OWL) were in aggregate known as "The TDWG Ontology" and were intended to either be based on an existing standard or to eventually be incorporated as part of an evolving standard.  Thus the TaxonName and TaconConcept ontologies were based on (but not actually part of) the Taxon Concept Transfer Schema (TCS), a Current (2005) Standard, and the Institution and Collection Ontologies were created as part of the development of the NCD Draft Standard.
 
-The "TDWG Ontology" actually consists of a number of individual ontology documents written in OWL/RDF.  They were written primarily by Roger Hyam in 2006 and 2007.  The individual ontologies have base URIs in the form "http://rs.tdwg.org/ontology/[something]#" where [something](something.md) is descriptive of the particular ontology.  The ontology documents can be viewed at http://code.google.com/p/tdwg-ontology/source/browse/trunk/ontology/ and lower levels of the document tree. Semantic clients requesting content-type: application/rdf+xml are redirected to the OWL/RDF versions of the ontology, probably the ones at http://rs.tdwg.org/ontology2/, but maybe http://rs.tdwg.org/ontology/ (I'm not sure which).  The list of ontologies at the Google Code site includes two versions of some of the ontologies, a .owl version and a .rdf version.  It appears that the .rdf versions are the most current version and are the ones which are returned to semantic clients.
+The "TDWG Ontology" actually consists of a number of individual ontology documents written in OWL/RDF.  They were written primarily by Roger Hyam in 2006 and 2007.  The individual ontologies have base URIs in the form "http://rs.tdwg.org/ontology/[something]#" where \[something\] is descriptive of the particular ontology.  The ontology documents can be viewed at http://code.google.com/p/tdwg-ontology/source/browse/trunk/ontology/ and lower levels of the document tree. Semantic clients requesting content-type: application/rdf+xml are redirected to the OWL/RDF versions of the ontology, probably the ones at http://rs.tdwg.org/ontology2/, but maybe http://rs.tdwg.org/ontology/ (I'm not sure which).  The list of ontologies at the Google Code site includes two versions of some of the ontologies, a .owl version and a .rdf version.  It appears that the .rdf versions are the most current version and are the ones which are returned to semantic clients.
 
 The TDWG ontology is not currently under development (see http://www.hyam.net/blog/archives/643#more-643 ) and as of 2013-03-15 its future is under discussion by the TDWG Vocabulary Management (VoMaG) Task Group (see http://community.gbif.org/pg/pages/view/29079/ ).
 
@@ -53,9 +53,9 @@ The TDWG ontology is not currently under development (see http://www.hyam.net/bl
 
 ## 2.2 Class structure ##
 
-All of the classes used in the TDWG Ontology are defined within the parts of the ontology.  The tc:TaxonConcept and tn:TaxonName classes are based on the the ideas expressed in the TCS Standard. A complete list of classes defined in the ontology can be found [here](http://code.google.com/p/tdwg-rdf/wiki/ClassInventory#1.4.__Classes_in_the_TDWG_Ontologies).
+All of the classes used in the TDWG Ontology are defined within the parts of the ontology.  The tc:TaxonConcept and tn:TaxonName classes are based on the the ideas expressed in the TCS Standard. A complete list of classes defined in the ontology can be found [here](ClassInventory.md).
 
-![http://tdwg-rdf.googlecode.com/svn/trunk/file/tdwg-ontology-class-structure.png](http://tdwg-rdf.googlecode.com/svn/trunk/file/tdwg-ontology-class-structure.png)
+![file/tdwg-ontology-class-structure.png](file/tdwg-ontology-class-structure.png)
 
 ## 2.3 Subclass relationships ##
 base: = http://rs.tdwg.org/ontology/Base#
@@ -104,7 +104,7 @@ The rdfs:comment associated with the current version of the ontology (v 0.2 on 2
 
 ## 3.2 Class structure ##
 
-![http://tdwg-rdf.googlecode.com/svn/trunk/file/taxonconcept-class-structure.png](http://tdwg-rdf.googlecode.com/svn/trunk/file/taxonconcept-class-structure.png)
+![file/taxonconcept-class-structure.png](file/taxonconcept-class-structure.png)
 
 Notes:
 
@@ -155,15 +155,13 @@ Note: the subject class for txn:hasCollector indicates that txn:Occurrence is vi
 
 ## 4.1 Description ##
 
-**Note: this information describes Darwin-SW version 0.2 .  Darwin-SW is under revision for version 0.3 which will be in line with the draft Darwin Core RDF Guide.  Notably, version 0.3 will refer to classes in the DwC type vocabulary (dwctype: namespace) rather than classes in the general (dwc:) namespace.**
-
-The Darwin-SW Ontology (DSW) is a vocabulary which describes relationships among classes defined by the Darwin Core standard by defining object properties which relate those classes and several classes outside of Darwin Core.  The ontology is described at http://code.google.com/p/darwin-sw/ with the defining OWL ontology file viewable at http://code.google.com/p/darwin-sw/source/browse/trunk/dsw.owl .  Version 0.2 (the most recent version as of 2013-03-15) was written in 2011 by Steve Baskauf and Campbell Webb. The ontology is subject to change in future versions.
+The Darwin-SW Ontology (DSW) is a vocabulary which describes relationships among classes defined by the Darwin Core standard by defining object properties which relate those classes and several classes outside of Darwin Core.  The ontology is described at https://github.com/darwin-sw/dsw with the defining OWL ontology file viewable at https://github.com/darwin-sw/dsw/blob/master/dsw.owl .  Version 0.2 (the most recent version as of 2013-03-15) was written in 2011 by Steve Baskauf and Campbell Webb. The ontology is subject to change in future versions.
 
 The design principles that underlie DSW are elaborated at http://code.google.com/p/darwin-sw/wiki/DesignPrinciples .  DSW co-opts many of the Darwin Core classes and for the most part maintains the meaning of the class as described in the term definition.  DSW takes the position that a dwc:Occurrence instance documents an organism at a place and time, but that the physical or electronic documentary evidence is a separate entity which is considered to be an instance of the class dsw:Token.  In an attempt to add clarity to the meaning of the class dwc:Taxon, DSW declares that class to be equivalent to the tc:TaxonConcept class of the TDWG Ontology, since the meaning of tc:TaxonConcept is underpinned by the TDWG Taxon Concept Transfer Schema (TCS) standard.
 
 ## 4.2 Class structure ##
 
-![http://tdwg-rdf.googlecode.com/svn/trunk/file/darwin-sw-class-structure-revised.png](http://tdwg-rdf.googlecode.com/svn/trunk/file/darwin-sw-class-structure-revised.png)
+![file/darwin-sw-class-structure-revised.png](file/darwin-sw-class-structure-revised.png)
 
 Notes: Each of the core classes in DSW are connected by a pair of DSW-defined object properties which are declared to be inverse properties.  Many of the classes are declared to be disjoint.
 
