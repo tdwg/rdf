@@ -3,7 +3,7 @@ This example uses terms from the TDWG TaxonConcept and TaxonName ontologies as w
 
 ## Graphical representation ##
 
-<img src='http://tdwg-rdf.googlecode.com/svn/trunk/file/taxon.jpg' align='center' />
+![](file/taxon.jpg)
 
 Notes:
 
@@ -19,7 +19,7 @@ Notes:
 
 6. The RDF which results from dereferencing the uBio URI is not discussed here as it does not follow the TDWG Taxon Name ontology.
 
-7. The term used to connect the identification instance to the taxon is not specified and is out of scope of the current discussion.  That question should be addressed in the future. (Note added 2013-10-13: the Darwin Core RDF Guide ([view draft](DwcRdfGuideProposal#2.7.4_Description_of_a_taxonomic_entity.md)) defines the term `dwcuri:toTaxonConcept` to serve this purpose.)
+7. The term used to connect the identification instance to the taxon is not specified and is out of scope of the current discussion.  That question should be addressed in the future. (Note added 2016-08-27: the [Darwin Core RDF Guide ](http://rs.tdwg.org/dwc/terms/guides/rdf/) defines the term `dwciri:toTaxon` to serve this purpose.)
 
 8. The taxon instance is explicitly typed as `tc:TaxonConcept` in the RDF.  However, even if this were not done, a reasoner could infer this since the four other predicates having the taxon as their subject are declared to have `tc:TaxonConcept` as their domain in the ontology.
 
