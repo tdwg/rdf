@@ -39,7 +39,7 @@ Terms in the Darwin Core _dwciri:_ namespace and some terms imported from the Du
 |:----------------------------------------------------------|:-----------|:---------------|
 |dcterms:language                                           |MARC ISO 639-2 language codes|http://id.loc.gov/vocabulary/iso639-2.html|
 |dcterms:license                                            |Creative Commons 4.0 International licenses|http://creativecommons.org/licenses/|
-|dcterms:type                                               |DCMI Type Vocabulary|http://dublincore.org/documents/dcmi-terms/#H7|
+|dcterms:type                                               |DCMI Type Vocabulary|https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7|
 |<dl><dt>dwciri:earliestGeochronologicalEra</dt><dt>dwciri:latestGeochronologicalEra</dt></dl>|International Commission on Stratigraphy (http://www.stratigraphy.org/ )|https://vocabs.ands.org.au/registry/api/resource/downloads/939/isc2018-1.ttl|
 |dwcuri:inCollection                                        |Global Registry of Biorepositories|http://grbio.org/|
 |dwcuri:inDescribedPlace                                    |GeoNames geographical database|http://www.geonames.org/|
